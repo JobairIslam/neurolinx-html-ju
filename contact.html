@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Neurolinx</title>
+  </head>
+  <body class="font-normal bg-b-900">
+    <header
+      class="absolute top-0 left-0 right-0 z-[9999] py-4 border border-w-900 border-opacity-[8%] bg-opacity-5 backdrop-blur-lg bg-w-900"
+    >
+      <div class="container px-5 mx-auto xl:px-0">
+        <div class="items-center justify-between hidden desktop-header md:flex">
+          <a href="/" class="flex items-center justify-start gap-2"
+            ><img src="assets/img/logo.svg" alt="logo" /><span
+              class="text-xl font-medium text-w-900"
+              >Neurolinx</span
+            ></a
+          >
+          <nav>
+            <ul class="flex items-center justify-center md:gap-4 lg:gap-8">
+              <li>
+                <a
+                  href="/"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="solution.html"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >resources
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >company
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex items-center justify-end gap-2">
+            <a
+              href="sign-in.html"
+              class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 bg-transparent border border-transparent rounded-full text-w-900"
+              >sign in</a
+            >
+            <a
+              href="sign-up.html"
+              class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 border rounded-full btn-border bg-gd-secondary hover:bg-transparent text-w-900"
+              >sign up</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="md:hidden">
+        <div
+          class="container flex items-center justify-between px-5 mx-auto xl:px-0"
+        >
+          <a href="/" class="flex gap-2"
+            ><img src="assets/img/logo.svg" alt="logo" /><span
+              class="text-xl font-medium text-w-900"
+              >Neurolinx</span
+            ></a
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onclick="toggleMenu()"
+            class="inline-block w-6 h-6 cursor-pointer text-w-900"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </div>
+        <div
+          id="mobile-menu"
+          class="fixed z-[999999] top-0 left-0 flex-col justify-start items-start w-full h-screen p-5 bg-b-600 transition-all duration-300 hidden"
+        >
+          <nav>
+            <ul class="flex flex-col items-start justify-start gap-4">
+              <li>
+                <a
+                  href="/"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="solution.html"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >resources
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >company
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-2 mt-8">
+            <a
+              href="sign-in.html"
+              class="inline-block px-4 py-2 rounded-full border border-w-500 hover:border-tropical-indigo border-opacity-[8%] capitalize text-sm font-medium bg-transparent hover:bg-gd-secondary text-w-900 transition-all duration-300"
+              >sign in</a
+            >
+            <a
+              href="sign-up.html"
+              class="inline-block px-4 py-2 rounded-full border border-tropical-indigo hover:border-transparent border-opacity-[8%] capitalize text-sm font-medium bg-gd-secondary hover:bg-transparent text-w-900 transition-all duration-300"
+              >sign up</a
+            >
+          </div>
+          <svg
+            onclick="toggleMenu()"
+            class="absolute cursor-pointer right-5 top-5 text-w-100"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+    <div
+      class="pt-[135px] lg:pt-[164px] pb-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/hero-bgtwo.png')]"
+    >
+      <div class="container px-5 mx-auto xl:px-0">
+        <h2
+          class="gd-title text-center tracking-[-0.02em] lg:leading-[84px] text-3xl md:text-64x font-semibold"
+        >
+          Get in Touch with
+          <span class="inline-block lg:block">Our Sales Team</span>
+        </h2>
+        <p class="mt-6 text-base text-center md:text-xl text-w-100">
+          Boost productivity and security for every team in your company
+          <span class="inline-block md:block"></span>
+          with our platform and upgraded support.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="lg:py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/contact-bg.png')]"
+    >
+      <div class="container px-5 mx-auto xl:px-0">
+        <div
+          class="flex flex-col md:flex-row justify-start md:justify-center items-start md:items-center gap-[30px]"
+        >
+          <div class="px-6 md:px-12">
+            <h2
+              class="gd-title text-left lg:leading-[42px] text-32x font-medium"
+            >
+              Find Your Perfect Fit <span class="block"></span> with Neurolinx
+            </h2>
+            <p class="mt-4 mb-12 text-base text-w-100">
+              We're here to answer any questions you may have.
+            </p>
+            <ul class="flex flex-col gap-4 text-base font-medium text-w-900">
+              <li class="flex items-start justify-start gap-2">
+                <img
+                  src="assets/img/icons/colored-check.svg"
+                  alt="icon"
+                />Context-rich prompts tailored to your unique data sources.
+              </li>
+              <li class="flex items-start justify-start gap-2">
+                <img src="assets/img/icons/colored-check.svg" alt="icon" />Boost
+                efficiency with upgraded security and support.
+              </li>
+              <li class="flex items-start justify-start gap-2">
+                <img src="assets/img/icons/colored-check.svg" alt="icon" />Find
+                the perfect fit for every team with Neurolinx.
+              </li>
+            </ul>
+            <span class="inline-block mt-12 mb-6 text-base text-w-100"
+              >Trusted by Growing Teams</span
+            >
+            <img src="assets/img/brand/group.png" alt="" />
+          </div>
+          <div
+            class="p-6 md:p-12 w-full md:max-w-[630px] rounded-lg bg-gd-tertiary border border-b-600"
+          >
+            <h3 class="mb-6 text-2xl font-medium text-w-500">
+              Share About Yourself and Expect
+              <span class="inline-block md:block"></span> a Prompt Response
+            </h3>
+            <form class="flex flex-col gap-3">
+              <div class="flex flex-col gap-3 sm:flex-row">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="px-6 py-[14px] w-full outline-none rounded-full border border-b-500 capitalize text-base bg-transparent text-w-900"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="px-6 py-[14px] w-full outline-none rounded-full border border-b-500 capitalize text-base bg-transparent text-w-900"
+                  required
+                />
+              </div>
+              <div class="flex flex-col gap-3 sm:flex-row">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="px-6 py-[14px] w-full outline-none rounded-full border border-b-500 capitalize text-base bg-transparent text-w-900"
+                  required
+                />
+                <input
+                  type=""
+                  placeholder="Phone Number"
+                  class="px-6 py-[14px] w-full outline-none rounded-full border border-b-500 capitalize text-base bg-transparent text-w-900"
+                  required
+                />
+              </div>
+              <div class="flex flex-col gap-3 sm:flex-row">
+                <input
+                  type="text"
+                  placeholder="Company Name"
+                  class="px-6 py-[14px] w-full outline-none rounded-full border border-b-500 capitalize text-base bg-transparent text-w-900"
+                  required
+                />
+                <div
+                  class="px-6 py-[14px] w-full rounded-full border border-b-500 bg-transparent"
+                >
+                  <select
+                    name="Company Size"
+                    id="company-size"
+                    class="w-full text-base capitalize bg-transparent outline-none text-w-100"
+                    required
+                  >
+                    <option value="company size">Company Size</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                  </select>
+                </div>
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                class="px-6 py-[14px] w-full h-[120px] md:h-[240px] outline-none rounded-3xl border border-b-500 capitalize text-base bg-transparent text-w-900"
+                placeholder="Enter your message here"
+                required
+              ></textarea>
+              <div class="flex items-center gap-3">
+                <input
+                  type="checkbox"
+                  name="check"
+                  id="check"
+                  class="text-base text-w-100"
+                  required
+                />
+                <p class="text-base text-w-100">
+                  I agree to Neurolinx's
+                  <a
+                    href="privacy-policy.html"
+                    class="gd-title hover:underline transi"
+                    >Privacy Policy</a
+                  >
+                  and
+                  <a
+                    href="terms-of-service.html"
+                    class="gd-title hover:underline transi"
+                    >Terms of Service</a
+                  >.
+                </p>
+              </div>
+              <button
+                type="submit"
+                class="flex justify-center items-center gap-2 mt-6 py-[14px] rounded-full capitalize bg-gd-secondary text-w-900"
+              >
+                contact sales
+                <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/getstart-bg.png')]"
+    >
+      <div class="container px-5 mx-auto xl:px-0">
+        <div class="flex flex-col items-center justify-center">
+          <img src="assets/img/brand-logo.svg" alt="brand-logo" />
+          <h2
+            class="gd-title mt-8 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
+          >
+            Elevate Your Exploration <span class="block"></span> with AI Deep
+            Search
+          </h2>
+          <p class="mt-4 mb-8 text-base text-center md:text-xl text-w-100">
+            Enhance Your Discoveries Unleash the Power of AI Neurolinx Deep
+            Search
+          </p>
+          <a
+            href="sign-in.html"
+            class="flex justify-center items-center gap-2 px-6 py-[14px] rounded-full border border-tropical-indigo capitalize text-base font-medium bg-gd-secondary text-w-900"
+          >
+            Get Started Now
+            <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="pt-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/footer-bg.png')]"
+    >
+      <div class="container px-5 pb-24 mx-auto xl:px-0">
+        <div
+          class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:gap-24"
+        >
+          <div
+            class="flex flex-col justify-start items-start gap-8 lg:gap-[112px]"
+          >
+            <a href="/" class="flex items-center justify-start gap-2"
+              ><img src="assets/img/logo.svg" alt="logo" /><span
+                class="text-xl font-medium text-w-900"
+                >Neurolinx</span
+              ></a
+            >
+            <div class="flex gap-4">
+              <a href="#"
+                ><img src="assets/img/icons/facebook.svg" alt="icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/img/icons/instagram.svg" alt="icon"
+              /></a>
+              <a href="#"><img src="assets/img/icons/x.svg" alt="icon" /></a>
+              <a href="#"
+                ><img src="assets/img/icons/linkedin.svg" alt="icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/img/icons/youtube.svg" alt="icon"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-12 lg:flex-row lg:gap-24"
+          >
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">company</h4>
+              <a
+                href="/"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >homepage</a
+              >
+              <a
+                href="contact.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >contact us</a
+              >
+              <a
+                href="sign-in.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >sign in</a
+              >
+              <a
+                href="sign-up.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >sign up</a
+              >
+            </div>
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">
+                solutions
+              </h4>
+              <a
+                href="solution.html "
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Advanced prompts</a
+              >
+              <a
+                href="documentation.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >documentation</a
+              >
+              <a
+                href="how-it-work.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >how it works</a
+              >
+              <a
+                href="media-kit.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >media kit</a
+              >
+            </div>
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">
+                resources
+              </h4>
+              <a
+                href="blog.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >blog</a
+              >
+              <a
+                href="blog-single.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >blog signle</a
+              >
+              <a
+                href="case-studies.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >case studies</a
+              >
+              <a
+                href="case-studies-single.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >case studies single</a
+              >
+            </div>
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">about us</h4>
+              <a
+                href="/patent.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Our Patents</a
+              >
+              <a
+                href="/service.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Our Services</a
+              >
+              <a
+                href="/story.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+              >
+                Our Story</a
+              >
+              <a
+                href="/team.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Our Team</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-5 pb-6 mx-auto xl:px-0 md:py-6">
+        <div
+          class="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-between md:gap-8"
+        >
+          <p class="text-xs text-w-100">
+            Copyright &copy; 2024 <a href="/">Neurolinx</a>. All rights reserved
+          </p>
+          <ul class="flex items-center gap-8 md:justify-end">
+            <li
+              class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+            >
+              <a href="privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li
+              class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+            >
+              <a href="terms-of-service.html">Terms of Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

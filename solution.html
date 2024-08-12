@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Neurolinx</title>
+  </head>
+  <body class="overflow-x-hidden font-normal bg-b-900">
+    <header
+      class="absolute top-0 left-0 right-0 z-[9999] py-4 border border-w-900 border-opacity-[8%] bg-opacity-5 backdrop-blur-lg bg-w-900"
+    >
+      <div class="container px-5 mx-auto xl:px-0">
+        <div class="items-center justify-between hidden desktop-header md:flex">
+          <a href="/" class="flex items-center justify-start gap-2"
+            ><img src="assets/img/logo.svg" alt="logo" /><span
+              class="text-xl font-medium text-w-900"
+              >Neurolinx</span
+            ></a
+          >
+          <nav>
+            <ul class="flex items-center justify-center md:gap-4 lg:gap-8">
+              <li>
+                <a
+                  href="/"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="solution.html"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >resources
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >company
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex items-center justify-end gap-2">
+            <a
+              href="sign-in.html"
+              class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 bg-transparent border border-transparent rounded-full text-w-900"
+              >sign in</a
+            >
+            <a
+              href="sign-up.html"
+              class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 border rounded-full btn-border bg-gd-secondary hover:bg-transparent text-w-900"
+              >sign up</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="md:hidden">
+        <div
+          class="container flex items-center justify-between px-5 mx-auto xl:px-0"
+        >
+          <a href="/" class="flex gap-2"
+            ><img src="assets/img/logo.svg" alt="logo" /><span
+              class="text-xl font-medium text-w-900"
+              >Neurolinx</span
+            ></a
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onclick="toggleMenu()"
+            class="inline-block w-6 h-6 cursor-pointer text-w-900"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </div>
+        <div
+          id="mobile-menu"
+          class="fixed z-[999999] top-0 left-0 flex-col justify-start items-start w-full h-screen p-5 bg-b-600 transition-all duration-300 hidden"
+        >
+          <nav>
+            <ul class="flex flex-col items-start justify-start gap-4">
+              <li>
+                <a
+                  href="/"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="solution.html"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >resources
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >company
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-2 mt-8">
+            <a
+              href="sign-in.html"
+              class="inline-block px-4 py-2 rounded-full border border-w-500 hover:border-tropical-indigo border-opacity-[8%] capitalize text-sm font-medium bg-transparent hover:bg-gd-secondary text-w-900 transition-all duration-300"
+              >sign in</a
+            >
+            <a
+              href="sign-up.html"
+              class="inline-block px-4 py-2 rounded-full border border-tropical-indigo hover:border-transparent border-opacity-[8%] capitalize text-sm font-medium bg-gd-secondary hover:bg-transparent text-w-900 transition-all duration-300"
+              >sign up</a
+            >
+          </div>
+          <svg
+            onclick="toggleMenu()"
+            class="absolute cursor-pointer right-5 top-5 text-w-100"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="pt-[135px] lg:pt-[164px] pb-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/hero-bgtwo.png')]"
+    >
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h1
+          class="gd-title tracking-[-0.02em] text-center text-3xl md:text-4xl lg:text-64x leading-tight md:leading-relaxed lg:leading-[84px] font-semibold"
+        >
+          Personalized Experiences
+          <span class="inline-block lg:block">with Advanced Prompts</span>
+        </h1>
+        <p class="mt-6 text-center text-base md:text-xl text-w-100">
+          Neurolinx enables context-based search and recommendations without
+          user logs,<span class="inline-block lg:block"></span> enhancing user
+          personalization and experience.
+        </p>
+      </div>
+    </div>
+
+    <div class="lg:py-24 bg-[url('../img/bc/enhancing-bg.png')]">
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
+        >
+          Enhancing Context-Aware
+          <span class="inline-block lg:block"></span>Natural Language
+          Understanding
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <div
+            class="p-6 md:p-12 rounded-lg bg-gd-tertiary border border-b-600"
+          >
+            <div class="inline-block p-4 rounded-full bg-primary btn-border">
+              <img src="assets/img/icons/1.svg" alt="icons" />
+            </div>
+            <h3 class="mt-6 md:mt-12 mb-4 text-2xl font-medium text-w-500">
+              Streamlined Setup
+            </h3>
+            <p class="text-base text-w-100">
+              Automate data preprocessing, learning updates, and load balancing
+              without extra infrastructure or manpower.
+            </p>
+          </div>
+          <div
+            class="p-6 md:p-12 rounded-lg bg-gd-tertiary border border-b-600"
+          >
+            <div class="inline-block p-4 rounded-full bg-primary btn-border">
+              <img src="assets/img/icons/2.svg" alt="icons" />
+            </div>
+            <h3 class="mt-6 md:mt-12 mb-4 text-2xl font-medium text-w-500">
+              Seamless Integration
+            </h3>
+            <p class="text-base text-w-100">
+              Easily integrate Neurolinx with your data catalogue and connect it
+              to your existing search, recommendation, or AI systems.
+            </p>
+          </div>
+          <div
+            class="p-6 md:p-12 rounded-lg bg-gd-tertiary border border-b-600"
+          >
+            <div class="inline-block p-4 rounded-full bg-primary btn-border">
+              <img src="assets/img/icons/3.svg" alt="icons" />
+            </div>
+            <h3 class="mt-6 md:mt-12 mb-4 text-2xl font-medium text-w-500">
+              Recent Outcomes
+            </h3>
+            <p class="text-base text-w-100">
+              Utilize real-time updates to incorporate recent data changes
+              seamlessly, without additional operational costs.
+            </p>
+          </div>
+          <div
+            class="p-6 md:p-12 rounded-lg bg-gd-tertiary border border-b-600"
+          >
+            <div class="inline-block p-4 rounded-full bg-primary btn-border">
+              <img src="assets/img/icons/4.svg" alt="icons" />
+            </div>
+            <h3 class="mt-6 md:mt-12 mb-4 text-2xl font-medium text-w-500">
+              Revenue Generation
+            </h3>
+            <p class="text-base text-w-100">
+              Drive revenue growth through Neurolinx by integrating its units
+              into your ad system or offering valuable data insights to other
+              businesses.
+            </p>
+          </div>
+          <div
+            class="p-6 md:p-12 rounded-lg bg-gd-tertiary border border-b-600"
+          >
+            <div class="inline-block p-4 rounded-full bg-primary btn-border">
+              <img src="assets/img/icons/5.svg" alt="icons" />
+            </div>
+            <h3 class="mt-6 md:mt-12 mb-4 text-2xl font-medium text-w-500">
+              Reducing Workload
+            </h3>
+            <p class="text-base text-w-100">
+              Neurolinx's data analytics expedite decision-making and
+              time-to-market, minimizing workload and boosting efficiency.
+            </p>
+          </div>
+          <div
+            class="p-6 md:p-12 rounded-lg bg-gd-tertiary border border-b-600"
+          >
+            <div class="inline-block p-4 rounded-full bg-primary btn-border">
+              <img src="assets/img/icons/6.svg" alt="icons" />
+            </div>
+            <h3 class="mt-6 md:mt-12 mb-4 text-2xl font-medium text-w-500">
+              Customizable Outcomes
+            </h3>
+            <p class="text-base text-w-100">
+              Overcome the limitations of opaque AI products with our flexible
+              platform, allowing easy adjustments to align results with your
+              business strategy.
+            </p>
+          </div>
+          <div
+            class="p-6 md:p-12 rounded-lg bg-gd-tertiary border border-b-600"
+          >
+            <div class="inline-block p-4 rounded-full bg-primary btn-border">
+              <img src="assets/img/icons/7.svg" alt="icons" />
+            </div>
+            <h3 class="mt-6 md:mt-12 mb-4 text-2xl font-medium text-w-500">
+              Long-tail Recs
+            </h3>
+            <p class="text-base text-w-100">
+              Enhance the value of your data by leveraging social-powered
+              recommendation data to deliver more personalized and relevant
+              results.
+            </p>
+          </div>
+          <div
+            class="p-6 md:p-12 rounded-lg bg-gd-tertiary border border-b-600"
+          >
+            <div class="inline-block p-4 rounded-full bg-primary btn-border">
+              <img src="assets/img/icons/8.svg" alt="icons" />
+            </div>
+            <h3 class="mt-6 md:mt-12 mb-4 text-2xl font-medium text-w-500">
+              Tailored Outcomes
+            </h3>
+            <p class="text-base text-w-100">
+              Kick-start user profiling with social-based datasets to resolve
+              the cold start problem and deliver personalized results.
+            </p>
+          </div>
+          <div
+            class="p-6 md:p-12 rounded-lg bg-gd-tertiary border border-b-600"
+          >
+            <div class="inline-block p-4 rounded-full bg-primary btn-border">
+              <img src="assets/img/icons/9.svg" alt="icons" />
+            </div>
+            <h3 class="mt-6 md:mt-12 mb-4 text-2xl font-medium text-w-500">
+              Voice Search Upgrade
+            </h3>
+            <p class="text-base text-w-100">
+              Optimize voice search with Neurolinx's NLP units that understand
+              colloquial terms and phrases, ensuring precise and intuitive
+              interactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/solves-bg.png')]"
+    >
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
+        >
+          Neurolinx Solves Industry
+          <span class="inline-block lg:block"></span>Specific Problems
+        </h2>
+        <div
+          class="pt-4 md:pt-8 lg:pt-16 px-4 md:px-8 lg:px-16 rounded-lg bg-gd-tertiary"
+        >
+          <img
+            src="assets/img/specific-problems.jpg"
+            class="rounded-t-lg lg:rounded-t-xl w-full"
+            alt="specific-problems"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="lg:py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/leverage-bg.png')]"
+    >
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
+        >
+          Leverage Any Data Source
+          <span class="inline-block lg:block"></span>No Matter How Diverse
+        </h2>
+        <div class="flex flex-col">
+          <div class="flex flex-col gap-[30px]">
+            <div
+              class="flex flex-col-reverse lg:flex-row justify-start lg:justify-between gap-[30px] lg:gap-[126px] p-6 md:p-12 rounded-lg border border-b-600 bg-gd-tertiary"
+            >
+              <div class="flex flex-col items-start justify-center">
+                <h3
+                  class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500"
+                >
+                  Ensure Pristine Data Quality
+                  <span class="inline-block lg:block"></span>for Optimal
+                  Performance
+                </h3>
+                <p class="mb-6 w-full md:max-w-[534px] text-base text-w-100">
+                  These sources collectively cater to different requirements,
+                  from academic research and professional analysis to staying
+                  informed on current affairs and exploring nuanced opinions.
+                </p>
+              </div>
+              <div class="rounded-lg">
+                <img
+                  class="rounded-lg w-full"
+                  src="assets/img/diverse1.png"
+                  alt="diverse"
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-col-reverse lg:flex-row-reverse justify-start lg:justify-between gap-[30px] lg:gap-[126px] p-6 md:p-12 rounded-lg border border-b-600 bg-gd-tertiary"
+            >
+              <div class="flex flex-col items-start justify-center">
+                <h3
+                  class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500"
+                >
+                  Strategies for Enhancing
+                  <span class="inline-block lg:block"></span>Data Quality
+                </h3>
+                <p class="mb-6 w-full md:max-w-[534px] text-base text-w-100">
+                  "Noisy" texts, like those from social networks and online
+                  communities, contain typos, slang, and informal language,
+                  reflecting dynamic online interactions and user sentiment.
+                </p>
+              </div>
+              <div class="rounded-lg">
+                <img
+                  class="rounded-lg w-full"
+                  src="assets/img/diverse2.png"
+                  alt="diverse"
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-col-reverse lg:flex-row justify-start lg:justify-between gap-[30px] lg:gap-[126px] p-6 md:p-12 rounded-lg border border-b-600 bg-gd-tertiary"
+            >
+              <div class="flex flex-col items-start justify-center">
+                <h3
+                  class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500"
+                >
+                  Data Management Leveraging
+                  <span class="inline-block lg:block"></span>Internal Resources
+                </h3>
+                <p class="mb-6 w-full md:max-w-[534px] text-base text-w-100">
+                  This approach not only enhances the quality of insights
+                  derived but also supports real-time decision-making and
+                  operational efficiency across different domains.
+                </p>
+              </div>
+              <div class="rounded-lg">
+                <img
+                  class="rounded-lg w-full"
+                  src="assets/img/diverse3.png"
+                  alt="diverse"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/customaI-bg.png')]"
+    >
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
+        >
+          Custom AI Solutions
+
+          <span class="inline-block lg:block"></span>Across Industries
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <div class="p-6 rounded-lg bg-gd-tertiary">
+            <img
+              src="assets/img/case-card1.png"
+              class="w-full"
+              alt="case card"
+            />
+            <h3 class="mt-8 mb-6 text-2xl text-w-500">
+              Global Personalized Product Discovery Platform for 360+ Beauty
+              Brands
+            </h3>
+            <a
+              href="team.html"
+              class="inline-block px-4 py-2 capitalize rounded-full border border-tropical-indigo text-sm font-medium bg-transparent text-w-900 hover:bg-tropical-indigo"
+            >
+              Read Case Study
+              <img
+                class="inline-block ms-2"
+                src="assets/img/icons/arrow-right.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
+          <div class="p-6 rounded-lg bg-gd-tertiary">
+            <img
+              src="assets/img/case-card2.png"
+              class="w-full"
+              alt="case card"
+            />
+            <h3 class="mt-8 mb-6 text-2xl text-w-500">
+              Fan-Powered Dynamic Music Chart Using Online Social Data
+            </h3>
+            <a
+              href="team.html"
+              class="inline-block px-4 py-2 capitalize rounded-full border border-tropical-indigo text-sm font-medium bg-transparent text-w-900 hover:bg-tropical-indigo"
+            >
+              Read Case Study
+              <img
+                class="inline-block ms-2"
+                src="assets/img/icons/arrow-right.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
+          <div class="p-6 rounded-lg bg-gd-tertiary">
+            <img
+              src="assets/img/case-card3.png"
+              class="w-full"
+              alt="case card"
+            />
+            <h3 class="mt-8 mb-6 text-2xl text-w-500">
+              AI Voice Search Leaders: Transforming the Duty-Free Industry
+            </h3>
+            <a
+              href="team.html"
+              class="inline-block px-4 py-2 capitalize rounded-full border border-tropical-indigo text-sm font-medium bg-transparent text-w-900 hover:bg-tropical-indigo"
+            >
+              Read Case Study
+              <img
+                class="inline-block ms-2"
+                src="assets/img/icons/arrow-right.svg"
+                alt="arrow"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="lg:py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/unlocking-bg.png')]"
+    >
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
+        >
+          Unlocking Unparalleled
+
+          <span class="inline-block lg:block"></span>Semantic Capabilities
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <div class="p-6 lg:p-12 flex gap-6 bg-gd-tertiary">
+            <h3 class="leading-[52px] text-40x font-medium text-w-900">
+              16M&plus;
+            </h3>
+            <span class="inline-block w-[1px] h-full bg-tropical-indigo"></span>
+            <p class="text-base text-w-100">Revolutionizing AI Integration</p>
+          </div>
+          <div class="p-6 lg:p-12 flex gap-6 bg-gd-tertiary">
+            <h3 class="leading-[52px] text-40x font-medium text-w-900">
+              64T&plus;
+            </h3>
+            <span class="inline-block w-[1px] h-full bg-tropical-indigo"></span>
+            <p class="text-base text-w-100">Advanced AI Solutions</p>
+          </div>
+          <div class="p-6 lg:p-12 flex gap-6 bg-gd-tertiary">
+            <h3 class="leading-[52px] text-40x font-medium text-w-900">
+              248&plus;
+            </h3>
+            <span class="inline-block w-[1px] h-full bg-tropical-indigo"></span>
+            <p class="text-base text-w-100">
+              Global <span class="block"></span> Integration
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/stepbystep-bg.png')]"
+    >
+      <div class="mx-auto px-5 xl:px-0 container">
+        <h2
+          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
+        >
+          Step-by-Step Guide
+          <span class="inline-block lg:block"></span>to Integrating Neurolinx
+        </h2>
+        <img src="assets/img/stepby.png" class="w-full" alt="" />
+      </div>
+    </div>
+
+    <div
+      class="lg:py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/FAQ-bg.png')]"
+    >
+      <div class="container px-5 mx-auto xl:px-0">
+        <div class="flex flex-col items-center justify-center">
+          <h2
+            class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
+          >
+            Frequently Asked
+            <span class="inline-block lg:block"></span>Questions
+          </h2>
+          <div class="flex flex-col gap-4 w-full lg:max-w-[850px]">
+            <div
+              class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary"
+            >
+              <div
+                class="flex items-start gap-2 text-base font-medium cursor-pointer according-header text-w-500"
+                onclick="toggleAccordion(0)"
+              >
+                <img src="assets/img/faq-icon.svg" alt="icon" />
+                What do our Subscription Plans and Add-ons offer&quest;
+              </div>
+              <div class="according-content pl-[40px]">
+                <p class="pt-4 text-base text-w-100">
+                  Neurolinx is cutting-edge technology that offers advanced
+                  AI-driven contextual search and recommendations. This
+                  innovative solution brings tangible advantages such as
+                  improved longtail search, enhanced personalization, and
+                  streamlined operations.
+                </p>
+              </div>
+            </div>
+            <div
+              class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary"
+            >
+              <div
+                class="flex items-start gap-2 text-base font-medium cursor-pointer according-header text-w-500"
+                onclick="toggleAccordion(1)"
+              >
+                <img src="assets/img/faq-icon.svg" alt="icon" />
+                What is the Mechanism Behind Functionality?
+              </div>
+              <div class="according-content pl-[40px]">
+                <p class="pt-4 text-base text-w-100">
+                  Neurolinx is cutting-edge technology that offers advanced
+                  AI-driven contextual search and recommendations. This
+                  innovative solution brings tangible advantages such as
+                  improved longtail search, enhanced personalization, and
+                  streamlined operations.
+                </p>
+              </div>
+            </div>
+            <div
+              class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary"
+            >
+              <div
+                class="flex items-start gap-2 text-base font-medium cursor-pointer according-header text-w-500"
+                onclick="toggleAccordion(2)"
+              >
+                <img src="assets/img/faq-icon.svg" alt="icon" />
+                What Advantages Does Search Offer?
+              </div>
+              <div class="according-content pl-[40px]">
+                <p class="pt-4 text-base text-w-100">
+                  Neurolinx is cutting-edge technology that offers advanced
+                  AI-driven contextual search and recommendations. This
+                  innovative solution brings tangible advantages such as
+                  improved longtail search, enhanced personalization, and
+                  streamlined operations.
+                </p>
+              </div>
+            </div>
+            <div
+              class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary"
+            >
+              <div
+                class="flex items-start gap-2 text-base font-medium cursor-pointer according-header text-w-500"
+                onclick="toggleAccordion(3)"
+              >
+                <img src="assets/img/faq-icon.svg" alt="icon" />
+                What Functionalities does the solution offer?
+              </div>
+              <div class="according-content pl-[40px]">
+                <p class="pt-4 text-base text-w-100">
+                  Neurolinx is cutting-edge technology that offers advanced
+                  AI-driven contextual search and recommendations. This
+                  innovative solution brings tangible advantages such as
+                  improved longtail search, enhanced personalization, and
+                  streamlined operations.
+                </p>
+              </div>
+            </div>
+            <div
+              class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary"
+            >
+              <div
+                class="flex items-start gap-2 text-base font-medium cursor-pointer according-header text-w-500"
+                onclick="toggleAccordion(4)"
+              >
+                <img src="assets/img/faq-icon.svg" alt="icon" />
+                What Advantages Does Personalization Offer?
+              </div>
+              <div class="according-content pl-[40px]">
+                <p class="pt-4 text-base text-w-100">
+                  Neurolinx is cutting-edge technology that offers advanced
+                  AI-driven contextual search and recommendations. This
+                  innovative solution brings tangible advantages such as
+                  improved longtail search, enhanced personalization, and
+                  streamlined operations.
+                </p>
+              </div>
+            </div>
+            <div
+              class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary"
+            >
+              <div
+                class="flex items-start gap-2 text-base font-medium cursor-pointer according-header text-w-500"
+                onclick="toggleAccordion(5)"
+              >
+                <img src="assets/img/faq-icon.svg" alt="icon" />
+                How is it utilized for personalization?
+              </div>
+              <div class="according-content pl-[40px]">
+                <p class="pt-4 text-base text-w-100">
+                  Neurolinx is cutting-edge technology that offers advanced
+                  AI-driven contextual search and recommendations. This
+                  innovative solution brings tangible advantages such as
+                  improved longtail search, enhanced personalization, and
+                  streamlined operations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/getstart-bg.png')]"
+    >
+      <div class="mx-auto px-5 xl:px-0 container">
+        <div class="flex flex-col justify-center items-center">
+          <img src="assets/img/brand-logo.svg" alt="brand-logo" />
+          <h2
+            class="gd-title mt-8 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
+          >
+            Elevate Your Exploration <span class="block"></span> with AI Deep
+            Search
+          </h2>
+          <p class="mt-4 mb-8 text-center text-base md:text-xl text-w-100">
+            Enhance Your Discoveries Unleash the Power of AI Neurolinx Deep
+            Search
+          </p>
+          <a
+            href="sign-in.html"
+            class="flex justify-center items-center gap-2 px-6 py-[14px] rounded-full border border-tropical-indigo capitalize text-base font-medium bg-gd-secondary text-w-900"
+          >
+            Get Started Now
+            <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="pt-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/footer-bg.png')]"
+    >
+      <div class="container px-5 pb-24 mx-auto xl:px-0">
+        <div
+          class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:gap-24"
+        >
+          <div
+            class="flex flex-col justify-start items-start gap-8 lg:gap-[112px]"
+          >
+            <a href="/" class="flex items-center justify-start gap-2"
+              ><img src="assets/img/logo.svg" alt="logo" /><span
+                class="text-xl font-medium text-w-900"
+                >Neurolinx</span
+              ></a
+            >
+            <div class="flex gap-4">
+              <a href="#"
+                ><img src="assets/img/icons/facebook.svg" alt="icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/img/icons/instagram.svg" alt="icon"
+              /></a>
+              <a href="#"><img src="assets/img/icons/x.svg" alt="icon" /></a>
+              <a href="#"
+                ><img src="assets/img/icons/linkedin.svg" alt="icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/img/icons/youtube.svg" alt="icon"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-12 lg:flex-row lg:gap-24"
+          >
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">company</h4>
+              <a
+                href="/"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >homepage</a
+              >
+              <a
+                href="contact.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >contact us</a
+              >
+              <a
+                href="sign-in.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >sign in</a
+              >
+              <a
+                href="sign-up.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >sign up</a
+              >
+            </div>
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">
+                solutions
+              </h4>
+              <a
+                href="solution.html "
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Advanced prompts</a
+              >
+              <a
+                href="documentation.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >documentation</a
+              >
+              <a
+                href="how-it-work.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >how it works</a
+              >
+              <a
+                href="media-kit.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >media kit</a
+              >
+            </div>
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">
+                resources
+              </h4>
+              <a
+                href="blog.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >blog</a
+              >
+              <a
+                href="blog-single.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >blog signle</a
+              >
+              <a
+                href="case-studies.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >case studies</a
+              >
+              <a
+                href="case-studies-single.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >case studies single</a
+              >
+            </div>
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">about us</h4>
+              <a
+                href="/patent.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Our Patents</a
+              >
+              <a
+                href="/service.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Our Services</a
+              >
+              <a
+                href="/story.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+              >
+                Our Story</a
+              >
+              <a
+                href="/team.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Our Team</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-5 pb-6 mx-auto xl:px-0 md:py-6">
+        <div
+          class="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-between md:gap-8"
+        >
+          <p class="text-xs text-w-100">
+            Copyright &copy; 2024 <a href="/">Neurolinx</a>. All rights reserved
+          </p>
+          <ul class="flex items-center gap-8 md:justify-end">
+            <li
+              class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+            >
+              <a href="privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li
+              class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+            >
+              <a href="terms-of-service.html">Terms of Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

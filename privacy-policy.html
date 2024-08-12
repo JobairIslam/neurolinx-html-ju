@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/output.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Neurolinx</title>
+  </head>
+  <body
+    class="font-normal bg-center bg-no-repeat bg-cover bg-body-gd lg:bg-blog"
+  >
+    <header
+      class="absolute top-0 left-0 right-0 z-[9999] py-4 border border-w-900 border-opacity-[8%] bg-opacity-5 backdrop-blur-lg bg-w-900"
+    >
+      <div class="container px-5 mx-auto xl:px-0">
+        <div class="items-center justify-between hidden desktop-header md:flex">
+          <a href="/" class="flex items-center justify-start gap-2"
+            ><img src="assets/img/logo.svg" alt="logo" /><span
+              class="text-xl font-medium text-w-900"
+              >Neurolinx</span
+            ></a
+          >
+          <nav>
+            <ul class="flex items-center justify-center md:gap-4 lg:gap-8">
+              <li>
+                <a
+                  href="/"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="solution.html"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >resources
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >company
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex items-center justify-end gap-2">
+            <a
+              href="sign-in.html"
+              class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 bg-transparent border border-transparent rounded-full text-w-900"
+              >sign in</a
+            >
+            <a
+              href="sign-up.html"
+              class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 border rounded-full btn-border bg-gd-secondary hover:bg-transparent text-w-900"
+              >sign up</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="md:hidden">
+        <div
+          class="container flex items-center justify-between px-5 mx-auto xl:px-0"
+        >
+          <a href="/" class="flex gap-2"
+            ><img src="assets/img/logo.svg" alt="logo" /><span
+              class="text-xl font-medium text-w-900"
+              >Neurolinx</span
+            ></a
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            onclick="toggleMenu()"
+            class="inline-block w-6 h-6 cursor-pointer text-w-900"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </div>
+        <div
+          id="mobile-menu"
+          class="fixed z-[999999] top-0 left-0 flex-col justify-start items-start w-full h-screen p-5 bg-b-600 transition-all duration-300 hidden"
+        >
+          <nav>
+            <ul class="flex flex-col items-start justify-start gap-4">
+              <li>
+                <a
+                  href="/"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="solution.html"
+                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >resources
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                  >company
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-2 mt-8">
+            <a
+              href="sign-in.html"
+              class="inline-block px-4 py-2 rounded-full border border-w-500 hover:border-tropical-indigo border-opacity-[8%] capitalize text-sm font-medium bg-transparent hover:bg-gd-secondary text-w-900 transition-all duration-300"
+              >sign in</a
+            >
+            <a
+              href="sign-up.html"
+              class="inline-block px-4 py-2 rounded-full border border-tropical-indigo hover:border-transparent border-opacity-[8%] capitalize text-sm font-medium bg-gd-secondary hover:bg-transparent text-w-900 transition-all duration-300"
+              >sign up</a
+            >
+          </div>
+          <svg
+            onclick="toggleMenu()"
+            class="absolute cursor-pointer right-5 top-5 text-w-100"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+    <div class="pt-[135px] lg:pt-[164px] pb-24">
+      <div class="container px-5 mx-auto xl:px-0">
+        <h2
+          class="gd-title text-center tracking-[-0.02em] md:leading-[84px] text-3xl md:text-64x font-semibold"
+        >
+          Neurolinx
+          <span class="block">Privacy Policy</span>
+        </h2>
+        <p class="mt-6 text-base text-center md:text-xl text-w-100">
+          Latest Update: November 1, 2023
+        </p>
+      </div>
+    </div>
+
+    <div class="lg:py-24">
+      <div class="container px-5 mx-auto xl:px-0">
+        <div
+          class="flex flex-col md:flex-row justify-start items-start gap-[30px]"
+        >
+          <div
+            class="flex flex-col justify-start items-start gap-4 w-full md:max-w-[410px]"
+            id="nav-container"
+          >
+            <a
+              class="inline-block text-xl font-medium gd-title"
+              href="#Overview"
+              >Overview</a
+            >
+            <a
+              class="inline-block text-xl font-medium text-w-100"
+              href="#Method-of-Collection"
+              >Method of Collection</a
+            >
+            <a
+              class="inline-block text-xl font-medium text-w-100"
+              href="#changes-to-terms-or-service"
+              >Collected Information</a
+            >
+            <a
+              class="inline-block text-xl font-medium text-w-100"
+              href="#Disclosure-of-Collected-Information"
+              >Disclosure of Information</a
+            >
+            <a class="inline-block text-xl font-medium text-w-100" href="#"
+              >Cookies and Similar Technologies</a
+            >
+            <a
+              class="inline-block text-xl font-medium text-w-100"
+              href="#User’s-Right"
+              >User’s Right</a
+            >
+            <a
+              class="inline-block text-xl font-medium text-w-100"
+              href="#Security"
+              >Security</a
+            >
+            <a
+              class="inline-block text-xl font-medium text-w-100"
+              href="#Information-of-Children"
+              >Information of Children</a
+            >
+            <a class="inline-block text-xl font-medium text-w-100" href="#"
+              >Modification of Protection</a
+            >
+            <a
+              class="inline-block text-xl font-medium text-w-100"
+              href="#Others"
+              >Others</a
+            >
+            <a
+              class="inline-block text-xl font-medium text-w-100"
+              href="#Contact-Information"
+              >Contact Information</a
+            >
+          </div>
+
+          <div class="ps-[30px] w-full md:max-w-[810px] border-s border-b-600">
+            <h2 class="mb-4 text-2xl font-medium text-w-500" id="Overview">
+              Overview
+            </h2>
+            <p class="text-base text-w-100">
+              This Policy (hereinafter referred to as "Policy") explains the way
+              of treatment of the information which is provided or collected in
+              the web sites on which this Policy is posted. In addition, the
+              Policy also explains the information which is provided or
+              collected while using the applications of Keytalk AI, Inc.
+              (hereinafter referred to as “Company”) which exist in the websites
+              or platforms of other company.
+            </p>
+            <p class="mt-6 text-base text-w-100">
+              The Company is the controller of the information provided or
+              collected in the websites on which this Policy is posted and while
+              using the applications of the Company which exist in the websites
+              or platforms of other company.
+            </p>
+            <p class="mt-6 text-base text-w-100">
+              Through this Policy, the Company regards personal information of
+              the users as important and inform them of the purpose and method
+              of Company's using the personal information provided by the users
+              and the measures taken by the Company for protection of those
+              personal information.
+            </p>
+            <p class="mt-6 text-base text-w-100">
+              This Policy will be effective on the 10th day of May, 2023 and, in
+              case of modification thereof, the Company will make public notice
+              of it through posting it on the bulletin board of Company's
+              website or individual notice through sending mails, fax or
+              e-mails.
+            </p>
+            <h2
+              class="pt-12 mb-4 text-2xl font-medium text-w-500"
+              id="Method-of-Collection"
+            >
+              Method of Collection
+            </h2>
+            <p class="text-base text-w-100">
+              The Company collects users' information in the following ways:
+            </p>
+            <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
+              <li>By which users enter their personal information online</li>
+              <li>
+                By which personal information is collected offline, such as
+                fairs, conferences, and events
+              </li>
+              <li>
+                By which personal information is collected through automatic
+                generation and collection.
+              </li>
+              <li>
+                The Company may collect information directly provided by users.
+              </li>
+              <li>
+                Users may reject the collection and use of optional items.
+              </li>
+            </ul>
+            <h2
+              class="pt-12 mb-4 text-2xl font-medium text-w-500"
+              id="Disclosure-of-Collected-Information"
+            >
+              Disclosure of Collected Information
+            </h2>
+            <p class="text-base text-w-100">
+              Except for the following cases, the Company will not disclose
+              personal information to a third party:
+            </p>
+            <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
+              <li>By which users enter their personal information online</li>
+              <li>
+                For carrying out services, the Company commissions external
+                professional companies
+              </li>
+              <li>If required to be disclosed by the laws and regulations.</li>
+              <li>
+                The Company does not provide users' personal information to a
+                third party except for the following.
+              </li>
+              <li>
+                When the user selects to receive information about products and
+                services of certain companies.
+              </li>
+              <li>
+                Other cases where the user gives prior consent for sharing his
+                or her personal information.
+              </li>
+              <li>
+                If required to be disclosed by the investigative agencies for
+                detecting crimes in accordance.
+              </li>
+            </ul>
+            <h2
+              class="pt-12 mb-4 text-2xl font-medium text-w-500"
+              id="privacy-policy"
+            >
+              Cookies and Similar Technologies
+            </h2>
+            <p class="text-base text-w-100">
+              The Company may collect collective and impersonal information
+              through 'cookies' or ‘web beacons’. Cookies are very small text
+              files sent to the users' browser by the server used for operation
+              of the Company's websites and stored in the hard disks of the
+              users' computer. Web beacons are small pieces of code that exist
+              on websites and emails. By using web beacons, we may know whether
+              a user has interacted with certain webs or the contents of an
+              email. These functions are used for evaluating, improving
+              services, and setting up users' experiences so that much-improved
+              services can be provided by the Company to the users.
+            </p>
+            <h2
+              class="pt-12 mb-4 text-2xl font-medium text-w-500"
+              id="User’s-Right"
+            >
+              User’s Right
+            </h2>
+            <p class="text-base text-w-100">
+              If, to exercise the above rights, a user uses the menu of
+              'amendment of member information' of the webpage or contacts the
+              Company by sending a document or e-mails or using the telephone to
+              the Company (or person in charge of the management of personal
+              information or a deputy), the Company will take measures without
+              delay. However, the Company may reject the request of a user only
+              to the extent that there exists either proper cause as prescribed
+              in the laws or equivalent cause.
+            </p>
+            <p class="mt-6 text-base text-w-100">
+              The users or their legal representatives may exercise the
+              following rights regarding the collection, use, and sharing of
+              personal information by the Company:
+            </p>
+            <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
+              <li>The right to access personal information.</li>
+              <li>The right to rectification.</li>
+              <li>The right to erasure.</li>
+              <li>The right to restriction of processing.</li>
+              <li>The right to data portability.</li>
+              <li>The right to object.</li>
+            </ul>
+
+            <h2
+              class="pt-12 mb-4 text-2xl font-medium text-w-500"
+              id="Security"
+            >
+              Security
+            </h2>
+            <p class="text-base text-w-100">
+              In principle, the Company destroys information immediately after
+              the purposes of its collection and use have been achieved without
+              delay. However, if any information is required to be retained as
+              required by relevant laws and regulations, the Company will retain
+              it for the period required by those laws and regulations before
+              destruction. In such an event, the personal information stored and
+              managed separately will never be used for other purposes. The
+              Company destroys hard copies of personal information by shredding
+              with a pulverizer or incinerating it, and deletes personal
+              information stored in the form of an electronic file by using a
+              technological method making that information not restored.
+            </p>
+            <p class="mt-6 text-base text-w-100">
+              In order to prevent the loss, theft, leakage, alteration, or
+              damage of personal information of users, the Company takes
+              technical, managerial, and physical measures for securing safety.
+            </p>
+            <h2
+              class="pt-12 mb-4 text-2xl font-medium text-w-500"
+              id="Information-of-Children"
+            >
+              Information of Children
+            </h2>
+            <p class="text-base text-w-100">
+              In principle, the Company does not collect any information from
+              children under 13 or the equivalent minimum age as prescribed by
+              the laws in the relevant jurisdiction. The website, products, and
+              services of the Company are provided to ordinary people, in
+              principle.
+            </p>
+            <h2 class="pt-12 mb-4 text-2xl font-medium text-w-500" id="Others">
+              Others
+            </h2>
+            <p class="text-base text-w-100">
+              Considering it engages in global businesses, the Company may
+              provide users' personal information to companies located in other
+              countries for the purpose as expressly stated in this Policy. For
+              the places where the personal information is transmitted,
+              retained, or processed, the Company takes reasonable measures for
+              protecting that personal information.
+            </p>
+            <p class="text-base text-w-100">
+              The website, product, or service of the Company may include links
+              to third-party sites, and the privacy protection policy of the
+              third-party site may be different. Thus, it is required for users
+              to additionally check the policy of a third-party site linked to
+              the Company's site
+            </p>
+            <p class="mt-6 text-base text-w-100">
+              If the user resides in California, certain rights may be given.
+              The Company prepares preventive measures necessary for protecting
+              personal information of members so that the Company can comply
+              with online privacy protection laws of California. In case of
+              leakage of personal information, a user may request the Company to
+              check the leakage. In addition, all users on the website of the
+              Company can modify their information at any time by using the menu
+              for changing information by connecting their personal account.
+              Moreover, the Company does not trace the visitors of its website
+              nor use any signals for 'tracing prevent'. The Company will not
+              collect and provide any personal identification information
+              through ad services without the consent of users.
+            </p>
+            <p class="mt-6 text-base text-w-100">
+              In principle, the Company destructs personal information of users
+              without delay when the purpose of its collection and use has been
+              achieved, or the legal or management needs are satisfied, or users
+              request. If it is required to retain the information by relevant
+              laws and regulations, the Company will retain member information
+              for a certain period as designated by relevant laws and
+              regulations.
+            </p>
+            <h2
+              class="pt-12 mb-4 text-2xl font-medium text-w-500"
+              id="Contact-Information"
+            >
+              Contact Information
+            </h2>
+            <p class="text-base text-w-100">
+              Please use one of the following methods to contact the Company
+              should you have any queries regarding this policy or wish to
+              update your information:
+            </p>
+            <p class="mt-6 text-base text-w-100">
+              The Company designates the following Data Protection Officer (DPO)
+              in order to protect personal information of customers and deal
+              with complaints from customers.
+            </p>
+            <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
+              <li>DPO of the Company: Ronald Richards</li>
+              <li>E-mail: business@neurolinx.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="pt-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/footer-bg.png')]"
+    >
+      <div class="container px-5 pb-24 mx-auto xl:px-0">
+        <div
+          class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:gap-24"
+        >
+          <div
+            class="flex flex-col justify-start items-start gap-8 lg:gap-[112px]"
+          >
+            <a href="/" class="flex items-center justify-start gap-2"
+              ><img src="assets/img/logo.svg" alt="logo" /><span
+                class="text-xl font-medium text-w-900"
+                >Neurolinx</span
+              ></a
+            >
+            <div class="flex gap-4">
+              <a href="#"
+                ><img src="assets/img/icons/facebook.svg" alt="icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/img/icons/instagram.svg" alt="icon"
+              /></a>
+              <a href="#"><img src="assets/img/icons/x.svg" alt="icon" /></a>
+              <a href="#"
+                ><img src="assets/img/icons/linkedin.svg" alt="icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/img/icons/youtube.svg" alt="icon"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start justify-start gap-12 lg:flex-row lg:gap-24"
+          >
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">company</h4>
+              <a
+                href="/"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >homepage</a
+              >
+              <a
+                href="contact.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >contact us</a
+              >
+              <a
+                href="sign-in.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >sign in</a
+              >
+              <a
+                href="sign-up.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >sign up</a
+              >
+            </div>
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">
+                solutions
+              </h4>
+              <a
+                href="solution.html "
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Advanced prompts</a
+              >
+              <a
+                href="documentation.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >documentation</a
+              >
+              <a
+                href="how-it-work.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >how it works</a
+              >
+              <a
+                href="media-kit.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >media kit</a
+              >
+            </div>
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">
+                resources
+              </h4>
+              <a
+                href="blog.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >blog</a
+              >
+              <a
+                href="blog-single.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >blog signle</a
+              >
+              <a
+                href="case-studies.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >case studies</a
+              >
+              <a
+                href="case-studies-single.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >case studies single</a
+              >
+            </div>
+            <div class="flex flex-col items-start justify-start gap-4">
+              <h4 class="text-sm font-medium uppercase text-w-500">about us</h4>
+              <a
+                href="/patent.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Our Patents</a
+              >
+              <a
+                href="/service.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Our Services</a
+              >
+              <a
+                href="/story.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+              >
+                Our Story</a
+              >
+              <a
+                href="/team.html"
+                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+                >Our Team</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-5 pb-6 mx-auto xl:px-0 md:py-6">
+        <div
+          class="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-between md:gap-8"
+        >
+          <p class="text-xs text-w-100">
+            Copyright &copy; 2024 <a href="/">Neurolinx</a>. All rights reserved
+          </p>
+          <ul class="flex items-center gap-8 md:justify-end">
+            <li
+              class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+            >
+              <a href="privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li
+              class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo"
+            >
+              <a href="terms-of-service.html">Terms of Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
