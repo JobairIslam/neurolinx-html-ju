@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="assets/css/output.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Neurolinx</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
   </head>
   <body class="font-normal bg-b-900">
     <header
@@ -171,33 +175,45 @@
       <div class="container px-5 mx-auto xl:px-0">
         <div class="flex flex-col items-center justify-center">
           <span
+            data-aos="fade-up"
             class="inline-block px-4 py-2 text-sm font-medium border rounded-full border-b-400 bg-b-600 text-tropical-indigo"
             >Neurolinx Deep Dive AI Search</span
           >
           <h1
+            data-aos="fade-up"
             class="gd-title mt-4 mb-6 tracking-[-0.02em] text-center text-3xl md:text-5xl lg:text-8xl lg:leading-[112px] font-semibold"
           >
             Delve Deep to Discover
             <span class="inline-block lg:block">Your True Desires</span>
           </h1>
-          <p class="mb-8 text-base text-center md:text-xl text-w-100">
+          <p
+            data-aos="fade-up"
+            class="mb-8 text-base text-center md:text-xl text-w-100"
+          >
             Introducing a Revolutionary Recommendation AI Harnessing Collective
             Insights <span class="inline-block lg:block"></span> to Power
             Industry-specific Decision Support Systems
           </p>
           <a
+            data-aos="fade-up"
             href="sign-in.html"
             class="flex justify-center items-center gap-2 mb-8 lg:mb-16 px-6 py-[14px] rounded-full border btn-border text-base font-medium bg-gd-secondary text-w-900"
           >
             Get Started Now
             <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
           </a>
-          <img src="assets/img/hero-dash.png" alt="dash-board" />
+          <img
+            data-aos="fade-up"
+            src="assets/img/hero-dash.png"
+            alt="dash-board"
+          />
           <span
+            data-aos="fade-up"
             class="inline-block mt-8 mb-8 text-sm font-medium lg:mt-16 text-w-100"
             >Endorsed by Premier Brands Globally</span
           >
           <div
+            data-aos="fade-up"
             class="hero-brand overflow-hidden whitespace-nowrap relative w-full lg:max-w-[1000px]"
           >
             <div class="inline-flex logo_items animate-slides">
@@ -225,6 +241,8 @@
       <div class="container px-5 mx-auto xl:px-0">
         <div class="flex flex-col items-center justify-center">
           <h2
+            data-aos="fade-up"
+            data-aos="fade-up"
             class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
           >
             Revolutionize Your Business
@@ -233,6 +251,7 @@
           <div class="flex flex-col gap-[30px]">
             <div class="flex flex-col lg:flex-row gap-[30px]">
               <div
+                data-aos="fade-right"
                 class="p-8 border rounded-lg md:p-12 border-b-600 bg-gd-tertiary"
               >
                 <h3
@@ -250,6 +269,7 @@
                 />
               </div>
               <div
+                data-aos="fade-left"
                 class="p-8 border rounded-lg md:p-12 border-b-600 bg-gd-tertiary"
               >
                 <h3
@@ -269,6 +289,7 @@
             </div>
             <div class="flex flex-col-reverse lg:flex-row-reverse gap-[30px]">
               <div
+                data-aos="fade-left"
                 class="p-8 border rounded-lg md:p-12 border-b-600 bg-gd-tertiary"
               >
                 <h3
@@ -286,6 +307,7 @@
                 />
               </div>
               <div
+                data-aos="fade-right"
                 class="p-8 border rounded-lg md:p-12 border-b-600 bg-gd-tertiary"
               >
                 <h3
@@ -857,5 +879,12 @@
       </div>
     </footer>
     <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
   </body>
 </html>
