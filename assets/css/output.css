@@ -1886,6 +1886,10 @@ video {
     padding-top: 164px;
   }
 
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
   .lg\:text-32x {
     font-size: 32px;
   }
