@@ -1,3 +1,6 @@
+// AOS ANIMATION
+AOS.init();
+
 // Menu
 function toggleMenu() {
   const menu = document.getElementById("mobile-menu");
