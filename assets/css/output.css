@@ -1246,14 +1246,14 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-\[14px\] {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .pb-12 {
@@ -1884,10 +1884,6 @@ video {
 
   .lg\:pt-\[164px\] {
     padding-top: 164px;
-  }
-
-  .lg\:pb-24 {
-    padding-bottom: 6rem;
   }
 
   .lg\:text-32x {
