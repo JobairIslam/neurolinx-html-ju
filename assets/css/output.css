@@ -739,10 +739,6 @@ video {
   display: none;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .h-6 {
   height: 1.5rem;
 }
@@ -773,10 +769,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .w-6 {
@@ -1244,11 +1236,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .py-\[14px\] {
