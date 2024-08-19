@@ -96,3 +96,20 @@
     position: relative;
   }
 }
+.according-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.according.active .according-content {
+  max-height: 200px; /* Adjust this value based on your content */
+}
+
+.according-header img {
+  transition: transform 0.4s ease;
+}
+
+.according.active .according-header img {
+  transform: rotate(90deg);
+}

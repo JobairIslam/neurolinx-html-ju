@@ -236,7 +236,7 @@
     </div>
 
     <div
-      class="lg:py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/revolutionize-bg.png')]"
+      class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/revolutionize-bg.png')]"
     >
       <div class="container px-5 mx-auto xl:px-0">
         <div class="flex flex-col items-center justify-center">
@@ -330,7 +330,7 @@
     </div>
 
     <div
-      class="py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/video-bg.png')]"
+      class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/video-bg.png')]"
     >
       <div class="container px-5 mx-auto xl:px-0">
         <div class="flex flex-col items-center justify-center">
@@ -382,7 +382,7 @@
     </div>
 
     <div
-      class="lg:py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/revolutionize-bg.png')]"
+      class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/revolutionize-bg.png')]"
     >
       <div class="container px-5 mx-auto xl:px-0">
         <h2
@@ -466,7 +466,7 @@
     </div>
 
     <div
-      class="py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/updates&media-bg.png')]"
+      class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/updates&media-bg.png')]"
     >
       <div class="container px-5 mx-auto xl:px-0">
         <div class="flex flex-col items-center justify-center">
@@ -569,9 +569,9 @@
         </div>
       </div>
     </div>
-
+    <!-- accordian -->
     <div
-      class="lg:py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/FAQ-bg.png')]"
+      class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/FAQ-bg.png')]"
     >
       <div class="container px-5 mx-auto xl:px-0">
         <div class="flex flex-col items-center justify-center">
@@ -586,8 +586,9 @@
             data-aos="fade-up"
             class="flex flex-col gap-4 w-full lg:max-w-[850px]"
           >
+            <!-- First accordion item is open by default -->
             <div
-              class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary"
+              class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary active"
             >
               <div
                 class="flex items-start gap-2 text-xl font-medium cursor-pointer according-header text-w-500"
@@ -596,7 +597,10 @@
                 <img src="assets/img/faq-icon.svg" alt="icon" />
                 What do our Subscription Plans and Add-ons offer&quest;
               </div>
-              <div class="according-content pl-[40px]">
+              <div
+                class="according-content pl-[40px]"
+                style="max-height: 200px"
+              >
                 <p class="pt-4 text-base text-w-100">
                   Neurolinx is cutting-edge technology that offers advanced
                   AI-driven contextual search and recommendations. This

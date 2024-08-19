@@ -28,19 +28,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // FAQ
 function toggleAccordion(index) {
-  var accordions = document.getElementsByClassName("according");
-  for (let i = 0; i < accordions.length; i++) {
-    var content = accordions[i].getElementsByClassName("according-content")[0];
-    var svg = accordions[i].querySelector(".according-header img");
+  const accordingItems = document.querySelectorAll(".according");
+  accordingItems.forEach((item, i) => {
+    const content = item.querySelector(".according-content");
+    const icon = item.querySelector(".according-header img");
+
     if (i === index) {
-      content.style.display =
-        content.style.display === "block" ? "none" : "block";
-      svg.classList.toggle("rotate-90");
-      accordions[i].classList.add("bg-faq-card-item");
+      item.classList.toggle("active");
+      if (item.classList.contains("active")) {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } else {
+        content.style.maxHeight = "0";
+      }
     } else {
-      content.style.display = "none";
-      svg.classList.remove("rotate-90");
+      item.classList.remove("active");
+      content.style.maxHeight = "0";
     }
-  }
+  });
 }
-toggleAccordion(0);
