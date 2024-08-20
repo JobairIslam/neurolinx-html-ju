@@ -17,9 +17,13 @@
     />
     <link rel="stylesheet" href="assets/css/output.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
     <title>Neurolinx</title>
   </head>
-  <body class="font-normal bg-b-900">
+  <body class="overflow-x-hidden font-normal bg-b-900">
     <div
       class="font-normal bg-center bg-no-repeat bg-cover bg-[url('../img/bc/signin-bg.png')]"
     >
@@ -28,25 +32,30 @@
           class="flex flex-col lg:flex-row justify-center items-center gap-[30px] h-full lg:h-screen"
         >
           <div class="w-full lg:max-w-[850px]">
-            <a href="/" class="flex items-center justify-start gap-2"
+            <a
+              data-aos="fade-up"
+              href="/"
+              class="flex items-center justify-start gap-2"
               ><img src="assets/img/logo.svg" alt="logo" /><span
                 class="text-xl font-medium text-w-900"
                 >Neurolinx</span
               ></a
             >
             <h2
+              data-aos="fade-up"
               class="mt-6 lg:mt-12 mb-4 leading-8 md:leading-[42px] text-2xl lg:text-32x font-medium gd-title"
             >
               Unlock AI Potential with
               <span class="inline-block lg:block"></span> Context-Rich Prompts
             </h2>
-            <p class="text-base text-w-100">
+            <p data-aos="fade-up" class="text-base text-w-100">
               Discover the power of AI with our context-rich, non-binary
               <span class="inline-block lg:block"></span> prompts crafted from
               your unique data sources.
             </p>
             <ul class="flex flex-col gap-2 my-6 lg:my-12">
               <li
+                data-aos="fade-up"
                 class="flex items-start justify-start gap-2 text-base font-medium text-w-900"
               >
                 <img
@@ -55,6 +64,7 @@
                 />Personalized recommendations and insights
               </li>
               <li
+                data-aos="fade-up"
                 class="flex items-start justify-start gap-2 text-base font-medium text-w-900"
               >
                 <img
@@ -63,6 +73,7 @@
                 />Enhance user experience and engagement
               </li>
               <li
+                data-aos="fade-up"
                 class="flex items-start justify-start gap-2 text-base font-medium text-w-900"
               >
                 <img
@@ -71,39 +82,62 @@
                 />Engineered from your unique data sources
               </li>
             </ul>
-            <p class="mb-6 text-base text-w-100">Trusted by Growing Teams</p>
-            <img src="assets/img/brand/group.png" alt="brand" />
+            <p data-aos="fade-up" class="mb-6 text-base text-w-100">
+              Trusted by Growing Teams
+            </p>
+            <img
+              data-aos="fade-up"
+              src="assets/img/brand/group.png"
+              alt="brand"
+            />
           </div>
           <div
             class="p-6 lg:p-12 rounded-lg w-full md:max-w-[410px] bg-gd-tertiary"
           >
-            <a href="/"
-              ><img src="assets/img/sign-logo.svg" alt="brand logo"
-            /></a>
-            <h3 class="mt-6 mb-2 text-2xl font-medium capitalize text-w-500">
+            <a href="/">
+              <img
+                data-aos="fade-up"
+                src="assets/img/sign-logo.svg"
+                alt="brand logo"
+              />
+            </a>
+            <h3
+              data-aos="fade-up"
+              class="mt-6 mb-2 text-2xl font-medium capitalize text-w-500"
+            >
               welcome
             </h3>
-            <span class="text-base text-w-100"
-              >Sign in to Neurolinx Account for Access</span
-            >
+            <div data-aos="fade-up">
+              <span class="text-base text-w-100">
+                Sign in to Neurolinx Account for Access
+              </span>
+            </div>
+
             <a
+              data-aos="fade-up"
               href="#"
               class="flex justify-center items-center gap-2 my-6 py-[14px] px-6 rounded-full border border-b-500 w-full text-w-900"
-              ><img src="assets/img/icons/g.svg" alt="google icon" /> Continue
-              with Google</a
             >
-            <div class="flex justify-center items-center gap-2 py-[14px] px-6">
+              <img src="assets/img/icons/g.svg" alt="google icon" /> Continue
+              with Google
+            </a>
+
+            <div
+              data-aos="fade-up"
+              class="flex justify-center items-center gap-2 py-[14px] px-6"
+            >
               <span class="inline-block w-full h-[1px] bg-b-500"></span>
               <span class="inline-block text-xs capitalize text-w-500">OR</span>
               <span class="inline-block w-full h-[1px] bg-b-500"></span>
             </div>
-            <form>
+
+            <form data-aos="fade-up">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Email Address"
-                class="mt-6 mb-3 py-[14px] px-6 rounded-full border border-b-500 w-full outline-none capitalize text-left text-w-900 bg-transparent"
+                class="mt-6 mb-3 py-[14px] px-6 rounded-full border border-b-500 w-full outline-none capitalize text-left text-b-100 bg-transparent placeholder-b-100"
                 required
               />
               <input
@@ -111,10 +145,14 @@
                 name="password"
                 id="password"
                 placeholder="Password"
-                class="mb-3 py-[14px] px-6 rounded-full border border-b-500 w-full outline-none capitalize text-left text-w-900 bg-transparent"
+                class="mb-3 py-[14px] px-6 rounded-full border border-b-500 w-full outline-none capitalize text-left text-b-100 bg-transparent placeholder-b-100"
                 required
               />
-              <a href="#" class="text-sm gd-title">Forgot Password&quest;</a>
+              <a
+                href="#"
+                class="text-sm border-b gd-title border-tropical-indigo"
+                >Forgot Password&quest;</a
+              >
               <button
                 class="flex justify-center items-center gap-2 mt-6 mb-3 py-[14px] px-6 rounded-full w-full text-base font-medium text-w-900 bg-gd-secondary"
               >
@@ -123,7 +161,9 @@
               </button>
               <h4 class="text-sm text-w-100">
                 Don't have an account&quest;
-                <a href="sign-up.html" class="underline capitalize gd-title"
+                <a
+                  href="sign-up.html"
+                  class="underline capitalize border-b gd-title border-tropical-indigo"
                   >sign up</a
                 >
               </h4>
@@ -132,5 +172,12 @@
         </div>
       </div>
     </div>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
