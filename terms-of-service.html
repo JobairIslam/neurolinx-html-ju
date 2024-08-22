@@ -19,9 +19,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Neurolinx</title>
   </head>
-  <body
-    class="font-normal bg-center bg-no-repeat bg-cover bg-body-gd lg:bg-term-of-services"
-  >
+  <body class="font-normal bg-center bg-no-repeat bg-cover bg-b-900">
     <header
       class="absolute top-0 left-0 right-0 z-[9999] py-4 border border-w-900 border-opacity-[8%] bg-opacity-5 backdrop-blur-lg bg-w-900"
     >
@@ -167,7 +165,9 @@
       </div>
     </header>
 
-    <div class="pt-[135px] lg:pt-[164px] pb-24">
+    <div
+      class="pt-[135px] lg:pt-[164px] pb-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/primary-hero-bg.svg')]"
+    >
       <div class="container px-5 mx-auto xl:px-0">
         <h2
           class="gd-title text-center tracking-[-0.02em] lg:leading-[84px] text-3xl md:text-64x font-semibold"
@@ -181,7 +181,7 @@
       </div>
     </div>
 
-    <div class="lg:py-24">
+    <div class="lg:py-24 py-8 bg-[url('../img/bc/terms-bg.svg')">
       <div class="container px-5 mx-auto xl:px-0">
         <div
           class="flex flex-col md:flex-row justify-start items-start gap-[30px]"
@@ -598,66 +598,66 @@
     <script src="assets/js/custom.js"></script>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const nav = document.getElementById('nav-container');
-        const links = nav.querySelectorAll('a');
+      document.addEventListener("DOMContentLoaded", function () {
+        const nav = document.getElementById("nav-container");
+        const links = nav.querySelectorAll("a");
 
-        // Add scroll event listener
-        window.addEventListener('scroll', function () {
+        window.addEventListener("scroll", function () {
           const offset = window.scrollY;
           if (offset > 100) {
-            nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            nav.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
           } else {
-            nav.style.boxShadow = 'none';
+            nav.style.boxShadow = "none";
           }
         });
 
-        // Select the Introduction button
         const introductionButton = nav.querySelector('a[href="#intro"]');
 
-        // Ensure the Introduction button has default classes
         if (introductionButton) {
           introductionButton.classList.add(
-            'inline-block',
-            'text-xl',
-            'font-medium',
-            'text-w-100'
+            "inline-block",
+            "text-xl",
+            "font-medium",
+            "text-w-100"
           );
         }
 
-        // Add click event listener to each link
         links.forEach((link) => {
-          link.addEventListener('click', function () {
-            // Remove 'gd-title' class from all links
-            links.forEach((item) => item.classList.remove('gd-title'));
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
 
-            // Add 'gd-title' class to the clicked link
-            this.classList.add('gd-title');
+            links.forEach((item) => item.classList.remove("gd-title"));
 
-            // Add 'text-w-10' to the Introduction button if any button has 'gd-title'
+            this.classList.add("gd-title");
+
             if (introductionButton) {
-              introductionButton.classList.add('text-w-10');
+              introductionButton.classList.add("text-w-10");
+            }
+
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: "smooth" });
             }
           });
         });
 
-        // Add event listener to ensure 'text-w-10' is removed if no button has 'gd-title'
         function checkGdTitlePresence() {
           const hasGdTitle = Array.from(links).some((link) =>
-            link.classList.contains('gd-title')
+            link.classList.contains("gd-title")
           );
           if (introductionButton) {
             if (hasGdTitle) {
-              introductionButton.classList.add('text-w-10');
+              introductionButton.classList.add("text-w-10");
             } else {
-              introductionButton.classList.remove('text-w-10');
+              introductionButton.classList.remove("text-w-10");
             }
           }
         }
 
-        // Call checkGdTitlePresence on initial load and on scroll
         checkGdTitlePresence();
-        window.addEventListener('scroll', checkGdTitlePresence);
+        window.addEventListener("scroll", checkGdTitlePresence);
       });
     </script>
   </body>

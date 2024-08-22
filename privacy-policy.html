@@ -19,9 +19,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Neurolinx</title>
   </head>
-  <body
-    class="font-normal bg-center bg-no-repeat bg-cover bg-body-gd lg:bg-blog"
-  >
+  <body class="font-normal bg-center bg-no-repeat bg-cover bg-b-900">
     <header
       class="absolute top-0 left-0 right-0 z-[9999] py-4 border border-w-900 border-opacity-[8%] bg-opacity-5 backdrop-blur-lg bg-w-900"
     >
@@ -166,7 +164,9 @@
         </div>
       </div>
     </header>
-    <div class="pt-[135px] lg:pt-[164px] pb-24">
+    <div
+      class="pt-[135px] lg:pt-[164px] pb-24 bg-[url('../img/bc/primary-hero-bg.svg')]"
+    >
       <div class="container px-5 mx-auto xl:px-0">
         <h2
           class="gd-title text-center tracking-[-0.02em] md:leading-[84px] text-3xl md:text-64x font-semibold"
@@ -180,7 +180,9 @@
       </div>
     </div>
 
-    <div class="lg:py-24">
+    <div
+      class="lg:py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/privacy-bg.svg')]"
+    >
       <div class="container px-5 mx-auto xl:px-0">
         <div
           class="flex flex-col md:flex-row justify-start items-start gap-[30px]"
@@ -190,7 +192,7 @@
             id="nav-container"
           >
             <a
-              class="inline-block text-xl font-medium gd-title"
+              class="inline-block text-xl font-medium text-w-800 gd-title"
               href="#Overview"
               >Overview</a
             >
@@ -644,5 +646,32 @@
       </div>
     </footer>
     <script src="assets/js/custom.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all links
+        const links = document.querySelectorAll("#nav-container a");
+
+        // Add click event listener to each link
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Remove gd-title class from all links
+            links.forEach((link) => link.classList.remove("gd-title"));
+
+            // Add gd-title class to the clicked link
+            this.classList.add("gd-title");
+
+            // Smooth scroll to the corresponding section
+            const targetId = this.getAttribute("href").substring(1); // Get the ID without #
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
