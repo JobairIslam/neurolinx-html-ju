@@ -735,10 +735,6 @@ video {
   display: grid;
 }
 
-.contents {
-  display: contents;
-}
-
 .hidden {
   display: none;
 }
@@ -1122,6 +1118,10 @@ video {
   background-image: url('../img/bc/philosophyofsearch-bg.png');
 }
 
+.bg-\[url\(\'\.\.\/img\/bc\/primary-hero-bg\.svg\'\)\] {
+  background-image: url('../img/bc/primary-hero-bg.svg');
+}
+
 .bg-\[url\(\'\.\.\/img\/bc\/revolutionize-bg\.png\'\)\] {
   background-image: url('../img/bc/revolutionize-bg.png');
 }
@@ -1168,14 +1168,6 @@ video {
 
 .bg-gd-tertiary {
   background-image: linear-gradient(330.61deg, rgba(238, 235, 255, 0.04) -7.38%, rgba(238, 235, 255, 0.02) -7.37%, rgba(238, 235, 255, 0.0718553) 91.81%, rgba(238, 235, 255, 0.08) 107.38%);
-}
-
-.bg-\[url\(\'\.\.\/img\/bc\/primary-hero-bg\.svg\'\)\] {
-  background-image: url('../img/bc/primary-hero-bg.svg');
-}
-
-.bg-\[url\(\'\.\.\/img\/bc\/privacy-bg\.svg\'\)\] {
-  background-image: url('../img/bc/privacy-bg.svg');
 }
 
 .bg-cover {
@@ -1317,12 +1309,12 @@ video {
   padding-top: 1rem;
 }
 
-.pt-\[135px\] {
-  padding-top: 135px;
-}
-
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-\[135px\] {
+  padding-top: 135px;
 }
 
 .text-left {
@@ -1485,12 +1477,6 @@ video {
 
 .opacity-50 {
   opacity: 0.5;
-}
-
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-md {
@@ -1927,10 +1913,6 @@ video {
 
   .lg\:border-r-border-r {
     border-right-color:  rgb(34, 31, 51);;
-  }
-
-  .lg\:bg-term-of-services {
-    background-image: url('../img/bg/term-of-services-bg.svg');
   }
 
   .lg\:p-12 {
