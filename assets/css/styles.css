@@ -113,3 +113,19 @@
 .according.active .according-header img {
   transform: rotate(90deg);
 }
+/* dropdown */
+.dropdown-content {
+  @apply absolute left-0 hidden p-4 mt-2 bg-white rounded-lg shadow-lg group-hover:flex top-full;
+}
+
+.group:hover .dropdown-content {
+  @apply block;
+}
+
+.down-svg {
+  @apply transition-transform duration-300 transform;
+}
+
+.group-hover .down-svg {
+  @apply -rotate-180;
+}
