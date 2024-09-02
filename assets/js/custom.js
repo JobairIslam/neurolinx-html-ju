@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function toggleMenu(menuId, iconId) {
-  const menu = document.getElementById(menuId);
-  const icon = document.getElementById(iconId);
+  const menu = document.getElementById("resources-megaMenu");
+  const icon = document.getElementById("resources-icon");
 
   // Toggle the menu visibility
   menu.classList.toggle("show");
