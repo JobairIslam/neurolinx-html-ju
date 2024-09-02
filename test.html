@@ -1,195 +1,253 @@
-<li class="menu-item-has-children">
-  <a href="#">New <i class="fa fa-angle-down"></i></a>
-  <div class="sub-menu mega-menu mega-menu-column-4">
-    <div class="text-center list-item">
-      <a href="#">
-        <img
-          src="https://th.bing.com/th/id/R.ce8de1adaa3fcc169f0d97c436b8274b?rik=6W1qX6Qp03lNWg&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1504633273314-6a929fcd7090%3fixlib%3drb-0.3.5%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26ixid%3deyJhcHBfaWQiOjEyMDd9%26s%3de8e0ff2cce3792a276fa84086113a17c&ehk=chx16tzqSRzpfA6BYM4FNaZZ%2fMJwEtxaqHPW1FZb9FI%3d&risl=&pid=ImgRaw&r=0"
-          alt="Fashion"
-        />
-        <h4 class="title">Fashion</h4>
-      </a>
-    </div>
-    <div class="text-center list-item">
-      <a href="#">
-        <img
-          src="https://img.freepik.com/free-photo/male-technician-repairing-computer-motherboard-wooden-desk_23-2147923493.jpg?w=740&t=st=1671765056~exp=1671765656~hmac=4c8dffc9558819b4c21b126aaa394150f48adc3be9c8004c0b65d0420709ec00"
-          alt="Electronics"
-        />
-        <h4 class="title">Electronics</h4>
-      </a>
-    </div>
-    <div class="text-center list-item">
-      <a href="#">
-        <img
-          src="https://images.unsplash.com/photo-1571380401583-72ca84994796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-          alt="Mobiles"
-        />
-        <h4 class="title">Mobiles</h4>
-      </a>
-    </div>
-    <div class="text-center list-item">
-      <a href="#">
-        <img
-          src="https://images.unsplash.com/photo-1578643463396-0997cb5328c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
-          alt="Appliances"
-        />
-        <h4 class="title">Appliances</h4>
-      </a>
-    </div>
+<div class="md:hidden">
+  <div class="container flex items-center justify-between px-5 mx-auto xl:px-0">
+    <a href="/" class="flex gap-2"
+      ><img src="assets/img/logo.svg" alt="logo" /><span
+        class="text-xl font-medium text-w-900"
+        >Neurolinx</span
+      ></a
+    >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      onclick="toggleMenu()"
+      class="inline-block w-6 h-6 cursor-pointer text-w-900"
+      fill="currentColor"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+      />
+    </svg>
   </div>
-</li>
-
-<!-- oprgtkbr;lb,gr;flbl;frbl;frblr -->
-<header class="header" id="header">
-  <nav class="container navbar">
-    <div class="navbar-inner">
-      <a href="index.html" class="brand">Brand</a>
-      <div class="burger" id="burger">
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-      </div>
-    </div>
-    <div class="navbar-block" id="menu">
-      <ul class="menu">
-        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-        <li class="menu-item dropdown">
-          <span class="dropdown-toggle menu-link">
-            Courses <i class="bx bx-chevron-down"></i>
-          </span>
-          <div class="dropdown-content">
-            <div class="dropdown-column">
-              <div class="dropdown-group">
-                <div class="dropdown-title">
-                  <span class="dropdown-icon"><i class="bx bx-code"></i></span>
-                  <span class="text-base font-medium">Web Development</span>
-                </div>
-                <ul class="dropdown-items">
-                  <li>
-                    <a href="#" class="dropdown-link"
-                      >Web Development Bootcamp</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-link"
-                      >HTML and CSS for Beginner</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-link"
-                      >Complete Modern JavaScript</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-link"
-                      >Complete React with Redux</a
-                    >
-                  </li>
-                </ul>
+  <div
+    id="mobile-menu"
+    class="fixed z-[999999] top-0 left-0 flex-col justify-start items-start w-full h-screen p-5 bg-b-600 transition-all duration-300 hidden"
+  >
+    <nav>
+      <ul class="flex flex-col items-start justify-start gap-4">
+        <li>
+          <a
+            href="/"
+            class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+            >home</a
+          >
+        </li>
+        <li>
+          <a
+            href="solution.html"
+            class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+            >solutions</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+            >resources
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </a>
+          <div
+            class="absolute left-1/2 transform -translate-x-1/2 hidden mt-9 w-[630px] rounded-lg shadow-lg bg-b-700 border border-b-500 group-hover:flex top-full"
+          >
+            <div class="flex flex-col w-full h-full">
+              <!-- Left Section -->
+              <div class="w-1/2 p-6 border-r border-b-500">
+                <h2 class="text-xl font-medium text-w-500">Resources</h2>
+                <p class="mt-2 text-sm text-w-100">
+                  AI-Powered theme personalization resources for tech agencies.
+                </p>
               </div>
-              <div class="dropdown-group">
-                <div class="dropdown-title">
-                  <span class="dropdown-icon"
-                    ><i class="bx bx-devices"></i
-                  ></span>
-                  <span class="text-base font-medium">Web Design</span>
-                </div>
-                <ul class="dropdown-items">
-                  <li>
-                    <a href="#" class="dropdown-link">Web Design Bootcamp</a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-link">Responsive Web Design</a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-link">Figma for Web Designer</a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-link">Webflow for Beginners</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="dropdown-group">
-                <div class="dropdown-title">
-                  <span class="dropdown-icon"
-                    ><i class="bx bx-bookmark"></i
-                  ></span>
-                  <span class="text-base font-medium">Certification</span>
-                </div>
-                <ul class="dropdown-items">
-                  <li>
-                    <a href="#" class="dropdown-link">Free Certificates</a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-link">Courses Certificates</a>
-                  </li>
-                  <li>
-                    <a href="#" class="dropdown-link">Premium Certificates</a>
-                  </li>
-                </ul>
+              <!-- Right Section -->
+              <div class="w-1/2 p-6">
+                <a href="blog.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg">
+                    <div>
+                      <img src="assets/img/blog-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">Blog</h3>
+                      <span>
+                        <p
+                          class="text-xs font-normal text-w-100 whitespace-nowrap"
+                        >
+                          Resources for tech agencies.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="case-studies.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg">
+                    <div>
+                      <img src="assets/img/case-studies-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Case Studies
+                      </h3>
+                      <span>
+                        <p
+                          class="text-xs font-normal text-w-100 whitespace-nowrap"
+                        >
+                          Explore detailed case studies.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="documentation.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg">
+                    <div>
+                      <img src="assets/img/documentation-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Documentation
+                      </h3>
+                      <span>
+                        <p
+                          class="text-xs font-normal text-w-100 whitespace-nowrap"
+                        >
+                          Detailed AI implementation guides.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </li>
-        <li class="menu-item dropdown">
-          <span class="dropdown-toggle menu-link">
-            Discover <i class="bx bx-chevron-down"></i>
-          </span>
-          <div class="dropdown-content">
-            <div class="dropdown-column">
-              <div class="dropdown-group">
-                <div class="dropdown-block">
-                  <span class="dropdown-icon"
-                    ><i class="bx bx-podcast"></i
-                  ></span>
-                  <div class="dropdown-inner">
-                    <a href="#" class="text-base font-medium">Podcasts</a>
-                    <p class="text-base font-normal">
-                      Hear and enjoy our inspiration podcast together with us.
-                    </p>
-                  </div>
-                </div>
-                <div class="dropdown-block">
-                  <span class="dropdown-icon"><i class="bx bx-video"></i></span>
-                  <div class="dropdown-inner">
-                    <a href="#" class="text-base font-medium">Tutorials</a>
-                    <p class="text-base font-normal">
-                      Learn video tutorial with our professional instructors.
-                    </p>
-                  </div>
-                </div>
+        <li>
+          <a
+            href="#"
+            class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+            >company
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </a>
+          <div
+            class="absolute left-1/2 transform -translate-x-1/2 hidden mt-9 w-[630px] rounded-lg shadow-lg bg-b-700 border border-b-500 group-hover:flex top-full"
+          >
+            <div class="flex flex-col w-full h-full">
+              <!-- Left Section -->
+              <div class="w-1/2 p-6 border-r border-b-500">
+                <h2 class="text-xl font-medium text-w-500">Resources</h2>
+                <p class="mt-2 text-sm text-w-100">
+                  AI-Powered theme personalization resources for tech agencies.
+                </p>
               </div>
-              <div class="dropdown-group">
-                <div class="dropdown-block">
-                  <span class="dropdown-icon"
-                    ><i class="bx bx-book-open"></i
-                  ></span>
-                  <div class="dropdown-inner">
-                    <a href="#" class="text-base font-medium">Help Center</a>
-                    <p class="text-base font-normal">
-                      Discover how to register, install and use our products.
-                    </p>
+              <!-- Right Section -->
+              <div class="w-1/2 p-6">
+                <a href="blog.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg">
+                    <div>
+                      <img src="assets/img/blog-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">Blog</h3>
+                      <span>
+                        <p
+                          class="text-xs font-normal text-w-100 whitespace-nowrap"
+                        >
+                          Resources for tech agencies.
+                        </p>
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div class="dropdown-block">
-                  <span class="dropdown-icon"
-                    ><i class="bx bx-bookmark"></i
-                  ></span>
-                  <div class="dropdown-inner">
-                    <a href="#" class="text-base font-medium">Community</a>
-                    <p class="text-base font-normal">
-                      Share and connect with other user in our communities.
-                    </p>
+                </a>
+                <a href="case-studies.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg">
+                    <div>
+                      <img src="assets/img/case-studies-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Case Studies
+                      </h3>
+                      <span>
+                        <p
+                          class="text-xs font-normal text-w-100 whitespace-nowrap"
+                        >
+                          Explore detailed case studies.
+                        </p>
+                      </span>
+                    </div>
                   </div>
-                </div>
+                </a>
+                <a href="documentation.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg">
+                    <div>
+                      <img src="assets/img/documentation-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Documentation
+                      </h3>
+                      <span>
+                        <p
+                          class="text-xs font-normal text-w-100 whitespace-nowrap"
+                        >
+                          Detailed AI implementation guides.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </li>
-        <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
-        <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
       </ul>
+    </nav>
+    <div class="flex items-center gap-2 mt-8">
+      <a
+        href="sign-in.html"
+        class="inline-block px-4 py-2 rounded-full border border-w-500 hover:border-tropical-indigo border-opacity-[8%] capitalize text-sm font-medium bg-transparent hover:bg-gd-secondary text-w-900 transition-all duration-300"
+        >sign in</a
+      >
+      <a
+        href="sign-up.html"
+        class="inline-block px-4 py-2 rounded-full border border-tropical-indigo hover:border-transparent border-opacity-[8%] capitalize text-sm font-medium bg-gd-secondary hover:bg-transparent text-w-900 transition-all duration-300"
+        >sign up</a
+      >
     </div>
-  </nav>
-</header>
+    <svg
+      onclick="toggleMenu()"
+      class="absolute cursor-pointer right-5 top-5 text-w-100"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="currentColor"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+      />
+    </svg>
+  </div>
+</div>
+<!-- absolute left-1/2 transform -translate-x-1/2 mt-9 -->
