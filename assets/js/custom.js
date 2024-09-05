@@ -1,43 +1,67 @@
-// Menu
-// function toggleMenu() {
-//   const menu = document.getElementById("mobile-menu");
-//   menu.classList.toggle("hidden");
-// }
-//mega menu for phone
-document.addEventListener("DOMContentLoaded", () => {
-  const resourcesLink = document.getElementById("resources-link");
-  const companyLink = document.getElementById("company-link");
-
-  resourcesLink.addEventListener("click", (event) => {
-    event.preventDefault();
-    toggleMenu("resources-menu", "resources-icon");
-  });
-
-  companyLink.addEventListener("click", (event) => {
-    event.preventDefault();
-    toggleMenu("company-menu", "company-icon");
-  });
-});
-
-function toggleMenu(menuId, iconId) {
-  const menu = document.getElementById("resources-megaMenu");
-  const icon = document.getElementById("resources-icon");
-
-  // Toggle the menu visibility
-  menu.classList.toggle("show");
-
-  // Rotate the icon
-  if (menu.classList.contains("show")) {
-    icon.style.transform = "rotate(180deg)";
-  } else {
-    icon.style.transform = "rotate(0deg)";
-  }
-}
-
+Menu;
 function toggleMenu() {
   const menu = document.getElementById("mobile-menu");
   menu.classList.toggle("hidden");
 }
+//mega menu for phone
+function toggleSubMenu(menu) {
+  const resourcesMenu = document.getElementById("resources-menu");
+  const companyMenu = document.getElementById("company-menu");
+
+  if (menu === "resources") {
+    resourcesMenu.classList.toggle("hidden");
+    companyMenu.classList.add("hidden");
+  } else if (menu === "company") {
+    companyMenu.classList.toggle("hidden");
+    resourcesMenu.classList.add("hidden");
+  }
+}
+//mobile menu
+function toggleSubMenu(menuId) {
+  const menu = document.getElementById(`${menuId}-menu`);
+  const arrow = menu.previousElementSibling.querySelector("svg");
+
+  // Toggle visibility of submenu
+  menu.classList.toggle("hidden");
+  menu.classList.toggle("flex"); // Add flex when it's visible
+
+  // Rotate arrow icon
+  arrow.classList.toggle("rotate-180");
+}
+//at a same time
+function toggleMenu() {
+  document.getElementById("mobile-menu").classList.toggle("hidden");
+}
+
+function toggleSubMenu(menu) {
+  const resourcesMenu = document.getElementById("resources-menu");
+  const companyMenu = document.getElementById("company-menu");
+
+  if (menu === "resources") {
+    // Close company if open and open resources
+    companyMenu.classList.add("hidden");
+    companyMenu.previousElementSibling
+      .querySelector("svg")
+      .classList.remove("rotate-180");
+
+    resourcesMenu.classList.toggle("hidden");
+    const resourcesArrow =
+      resourcesMenu.previousElementSibling.querySelector("svg");
+    resourcesArrow.classList.toggle("rotate-180");
+  } else if (menu === "company") {
+    // Close resources if open and open company
+    resourcesMenu.classList.add("hidden");
+    resourcesMenu.previousElementSibling
+      .querySelector("svg")
+      .classList.remove("rotate-180");
+
+    companyMenu.classList.toggle("hidden");
+    const companyArrow =
+      companyMenu.previousElementSibling.querySelector("svg");
+    companyArrow.classList.toggle("rotate-180");
+  }
+}
+
 // Video
 document.addEventListener("DOMContentLoaded", function () {
   const playBtn = document.querySelector(".play-btn");

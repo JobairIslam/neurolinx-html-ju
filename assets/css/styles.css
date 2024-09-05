@@ -20,6 +20,26 @@
     transform: translateX(-100%);
   }
 }
+/* mobile menu */
+/* Smooth submenu open/close */
+#resources-menu,
+#company-menu {
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.flex #resources-menu,
+.flex #company-menu {
+  max-height: 500px; /* Adjust this value based on your content */
+}
+
+/* Smooth arrow rotation */
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+/* mobile menu */
 .animate-slides {
   animation: slides 30s infinite linear;
 }
