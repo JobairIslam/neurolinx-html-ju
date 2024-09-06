@@ -1,17 +1,19 @@
 {
-  "name": "template-name",
+  "name": "Neurolinx",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrently --names \"SASS,WATCH,SERVE\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run sass:watch\" \"npm run serve\"",
+    "start": "concurrently --names \"TAILWIND,WATCH,SERVE\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run css:watch\" \"npm run serve\"",
     "serve": "lite-server",
-    "sass:watch": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch",
-    "sass": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css"
+    "css:watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css"
   },
   "author": "DiverseKit",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
     "concurrently": "^8.2.2",
     "lite-server": "^2.6.1",
-    "tailwindcss": "^3.3.5"
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.10"
   }
 }

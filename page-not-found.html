@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
     <link
       rel="shortcut icon"
@@ -45,11 +48,11 @@
       AOS.init({
         duration: 600, // Animation duration (1500ms)
         offset: 200, // Offset (200px from the trigger point)
-        easing: "ease-in-out", // Easing function
+        easing: 'ease-in-out', // Easing function
         delay: 100, // Delay before animation starts
         once: false, // Animation happens only once
         mirror: false, // Do not reverse animation when scrolling out of view
-        anchorPlacement: "top-center", // Trigger animation when the top of the element hits the center of the viewport
+        anchorPlacement: 'top-center', // Trigger animation when the top of the element hits the center of the viewport
       });
     </script>
   </body>
