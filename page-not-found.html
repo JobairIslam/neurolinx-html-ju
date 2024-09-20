@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
-    <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/output.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>Neurolinx</title>
-  </head>
-  <body
-    class="font-normal bg-center bg-no-repeat bg-cover bg-body-gd lg:bg-sign"
-  >
-    <div
-      class="container flex flex-col items-center justify-center h-screen px-5 mx-auto xl:px-0"
-    >
-      <h1
-        class="text-center leading-tight md:leading-[42px] lg:leading-[84px] text-3xl md:text-32x lg:text-64x font-medium gd-title"
-      >
-        404 <span class="block"></span> Page Not Found
-      </h1>
-      <p class="mt-6 mb-8 text-base text-center md:text-xl text-w-100">
-        The page you are trying to access does not exist. Please check the
-        address <span class="inline-block lg:block"></span> you entered or try
-        navigating to a different page.
-      </p>
-      <a
-        href="/"
-        class="flex justify-center items-center gap-2 px-6 py-[14px] rounded-full text-base font-medium text-w-900 bg-gd-secondary"
-        >Go to Homepage <img src="assets/img/icons/arrow-right.svg" alt="arrow"
-      /></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/output.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Neurolinx</title>
+</head>
+
+<body class="relative font-normal bg-center bg-no-repeat bg-cover bg-body-gd lg:bg-sign">
+  <div class="container flex flex-col items-center justify-center h-screen px-5 mx-auto xl:px-0">
+    <h1
+      class="text-center leading-tight md:leading-[42px] lg:leading-[84px] text-3xl md:text-32x lg:text-64x font-medium gd-title">
+      404 <span class="block"></span> Page Not Found
+    </h1>
+    <p class="mt-6 mb-8 text-base text-center md:text-xl text-w-100">
+      The page you are trying to access does not exist. Please check the
+      address <span class="inline-block lg:block"></span> you entered or try
+      navigating to a different page.
+    </p>
+    <a href="/"
+      class="flex justify-center items-center gap-2 px-6 py-[14px] rounded-full text-base font-medium text-w-900 bg-gd-secondary">Go
+      to Homepage <img src="assets/img/icons/arrow-right.svg" alt="arrow" /></a>
+  </div>
+  <div id="glowing-button-area"
+    class="glowing-button-area max-w-max fixed bottom-5 right-3 md:right-6 flex flex-col justify-center items-center overflow-hidden p-[3px] rounded-lg">
+    <div class="block m-auto rounded-full glowing-button-gradient"></div>
+    <div class="relative flex items-center justify-center px-6 py-3 rounded-lg glowing-button-inner">
+      <a href="https://themeforest.net/collections/11499853-synthmind-ai-generator-bot-business-and-technology-startup-web3-templates"
+        target="_blank" class="inline-block text-base capitalize glowing-button text-w-900">
+        Get Neurolinx For &dollar;29
+      </a>
+      <div class="rounded-lg glowing-button-inner-overlay bg-[#000]"></div>
     </div>
-    <script>
-      AOS.init({
-        duration: 600, // Animation duration (1500ms)
-        offset: 200, // Offset (200px from the trigger point)
-        easing: 'ease-in-out', // Easing function
-        delay: 100, // Delay before animation starts
-        once: false, // Animation happens only once
-        mirror: false, // Do not reverse animation when scrolling out of view
-        anchorPlacement: 'top-center', // Trigger animation when the top of the element hits the center of the viewport
-      });
-    </script>
-  </body>
+  </div>
+  <script>
+    AOS.init({
+      duration: 600, // Animation duration (1500ms)
+      offset: 200, // Offset (200px from the trigger point)
+      easing: 'ease-in-out', // Easing function
+      delay: 100, // Delay before animation starts
+      once: false, // Animation happens only once
+      mirror: false, // Do not reverse animation when scrolling out of view
+      anchorPlacement: 'top-center', // Trigger animation when the top of the element hits the center of the viewport
+    });
+  </script>
+</body>
+
 </html>

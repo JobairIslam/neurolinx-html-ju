@@ -1,1118 +1,795 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
-    <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="assets/css/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/output.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>Neurolinx</title>
-  </head>
-  <body class="font-normal bg-center bg-no-repeat bg-cover bg-b-900">
-    <header
-      class="absolute top-0 left-0 right-0 z-[9999] py-4 border border-w-900 border-opacity-[8%] bg-opacity-5 backdrop-blur-lg bg-w-900"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <div class="items-center justify-between hidden md:flex">
-          <a href="/" class="flex items-center justify-start gap-2">
-            <img src="assets/img/logo.svg" alt="logo" />
-            <span class="text-xl font-medium text-w-900">Neurolinx</span>
-          </a>
-          <nav>
-            <ul class="flex items-center justify-center md:gap-4 lg:gap-8">
-              <li class="relative group">
-                <a
-                  href="/"
-                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  >home</a
-                >
-              </li>
-              <li class="relative group">
-                <a
-                  href="solution.html"
-                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  >solutions</a
-                >
-              </li>
-              <li class="relative cursor-pointer nav-item group">
-                <a
-                  href="#"
-                  class="flex items-center gap-2 text-sm font-semibold capitalize transition-all duration-300 text-w-100"
-                >
-                  resources
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                    />
-                  </svg>
-                </a>
-                <!-- Resources Mega Menu -->
-                <div
-                  class="absolute left-1/2 transform -translate-x-1/2 hidden mt-9 w-[630px] rounded-lg shadow-lg bg-b-700 border border-b-500 group-hover:flex top-full"
-                >
-                  <div class="flex w-full h-full">
-                    <!-- Left Section -->
-                    <div class="w-1/2 p-6 border-r border-b-500">
-                      <h2 class="text-xl font-medium text-w-500">Resources</h2>
-                      <p class="mt-2 text-sm text-w-100">
-                        AI-Powered theme personalization resources for tech
-                        agencies.
-                      </p>
-                    </div>
-                    <!-- Right Section -->
-                    <div class="w-1/2 p-6">
-                      <a href="blog.html">
-                        <div
-                          class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img src="assets/img/blog-menu.svg" alt="" />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">Blog</h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal text-w-100 whitespace-nowrap"
-                              >
-                                Resources for tech agencies.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="case-studies.html">
-                        <div
-                          class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img
-                              src="assets/img/case-studies-menu.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Case Studies
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal text-w-100 whitespace-nowrap"
-                              >
-                                Explore detailed case studies.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="documentation.html">
-                        <div
-                          class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img
-                              src="assets/img/documentation-menu.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Documentation
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal text-w-100 whitespace-nowrap"
-                              >
-                                Detailed AI implementation guides.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="relative cursor-pointer group nav-item">
-                <a
-                  href="#"
-                  class="flex items-center gap-2 text-sm font-semibold capitalize transition-all duration-300 text-w-100"
-                >
-                  Company
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                    />
-                  </svg>
-                </a>
-                <!-- company Mega Menu -->
-                <div
-                  class="absolute left-1/2 transform -translate-x-1/2 hidden mt-9 w-[630px] rounded-lg shadow-lg bg-b-700 border border-b-500 group-hover:flex top-full"
-                >
-                  <div class="flex w-full h-full">
-                    <!-- Left Section -->
-                    <div class="w-1/2 p-6 border-r border-b-500">
-                      <h2 class="text-xl font-medium text-w-500">Company</h2>
-                      <p class="mt-2 text-sm text-w-100">
-                        Learn about our mission, team, <br />
-                        and values.
-                      </p>
-                    </div>
 
-                    <!-- Right Section -->
-                    <div class="w-1/2 p-6">
-                      <a href="story.html">
-                        <div
-                          class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img src="assets/img/our-story-menu.svg" alt="" />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Our Story
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal text-w-100 whitespace-nowrap"
-                              >
-                                Discover our journey and evolution.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="team.html">
-                        <div
-                          class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img src="assets/img/our-team-menu.svg" alt="" />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Our Team
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal text-w-100 whitespace-nowrap"
-                              >
-                                Meet our team of tech innovators.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="service.html">
-                        <div
-                          class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img
-                              src="assets/img/our-services-menu.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Our Services
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal text-w-100 whitespace-nowrap"
-                              >
-                                Tailored solutions for your needs.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="patent.html">
-                        <div
-                          class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img src="assets/img/our-patent-menu.svg" alt="" />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Our Patents
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal text-w-100 whitespace-nowrap"
-                              >
-                                Explore our intellectual portfolio.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="media-kit.html">
-                        <div
-                          class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img src="assets/img/media-kit-menu.svg" alt="" />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Media Kit
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal text-w-100 whitespace-nowrap"
-                              >
-                                Logos and brand guidelines.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          <div class="flex items-center justify-end gap-2">
-            <a
-              href="sign-in.html"
-              class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 bg-transparent border border-transparent rounded-full text-w-900"
-              >sign in</a
-            >
-            <a
-              href="sign-up.html"
-              class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 border rounded-full btn-border bg-gd-secondary hover:bg-transparent text-w-900"
-              >sign up</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="overflow-hidden md:hidden">
-        <div
-          class="container flex items-center justify-between px-5 mx-auto xl:px-0"
-        >
-          <a href="/" class="flex gap-2">
-            <img src="assets/img/logo.svg" alt="logo" />
-            <span class="text-xl font-medium text-w-900">Neurolinx</span>
-          </a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            onclick="toggleMenu()"
-            class="inline-block w-6 h-6 cursor-pointer text-w-900"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            />
-          </svg>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/output.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Neurolinx</title>
+</head>
 
-        <div
-          id="mobile-menu"
-          class="fixed z-[999999] top-0 left-0 flex-col justify-start items-start w-full h-screen p-5 bg-b-600 transition-all duration-300 hidden"
-        >
-          <nav>
-            <ul class="flex flex-col items-start justify-start gap-4">
-              <li>
-                <a
-                  href="/"
-                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  >home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="solution.html"
-                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  >solutions</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  onclick="toggleSubMenu('resources')"
-                  >resources
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="transition-transform duration-300 transform down-svg"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                    />
-                  </svg>
-                </a>
-
-                <ul
-                  id="resources-menu"
-                  id="resources-menu"
-                  class="flex-col hidden gap-2 mt-2"
-                >
-                  <a href="blog.html">
-                    <div
-                      class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/blog-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">Blog</h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal text-w-100 whitespace-nowrap"
-                          >
-                            Resources for tech agencies.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="case-studies.html">
-                    <div
-                      class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/case-studies-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Case Studies
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal text-w-100 whitespace-nowrap"
-                          >
-                            Explore detailed case studies.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="documentation.html">
-                    <div
-                      class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/documentation-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Documentation
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal text-w-100 whitespace-nowrap"
-                          >
-                            Detailed AI implementation guides.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  onclick="toggleSubMenu('company')"
-                  >company
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                    />
-                  </svg>
-                </a>
-                <ul id="company-menu" class="flex-col hidden gap-2 mt-2">
-                  <a href="story.html">
-                    <div
-                      class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/our-story-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Our Story
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal text-w-100 whitespace-nowrap"
-                          >
-                            Discover our journey and evolution.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="team.html">
-                    <div
-                      class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/our-team-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">Our Team</h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal text-w-100 whitespace-nowrap"
-                          >
-                            Meet our team of tech innovators.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="service.html">
-                    <div
-                      class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/our-services-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Our Services
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal text-w-100 whitespace-nowrap"
-                          >
-                            Tailored solutions for your needs.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="patent.html">
-                    <div
-                      class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/our-patent-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Our Patents
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal text-w-100 whitespace-nowrap"
-                          >
-                            Explore our intellectual portfolio.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="media-kit.html">
-                    <div
-                      class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/media-kit-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Media Kit
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal text-w-100 whitespace-nowrap"
-                          >
-                            Logos and brand guidelines.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <div class="flex items-center gap-2 mt-8">
-            <a
-              href="sign-in.html"
-              class="inline-block px-4 py-2 rounded-full border border-w-500 hover:border-tropical-indigo border-opacity-[8%] capitalize text-sm font-medium bg-transparent hover:bg-gd-secondary text-w-900 transition-all duration-300"
-              >sign in</a
-            >
-            <a
-              href="sign-up.html"
-              class="inline-block px-4 py-2 rounded-full border border-tropical-indigo hover:border-transparent border-opacity-[8%] capitalize text-sm font-medium bg-gd-secondary hover:bg-transparent text-w-900 transition-all duration-300"
-              >sign up</a
-            >
-          </div>
-          <svg
-            onclick="toggleMenu()"
-            class="absolute cursor-pointer right-5 top-5 text-w-100"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-            />
-          </svg>
-        </div>
-      </div>
-    </header>
-    <div
-      class="pt-[135px] lg:pt-[164px] pb-24 bg-[url('../img/bc/primary-hero-bg.svg')]"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <h2
-          data-aos="fade-up"
-          class="gd-title text-center tracking-[-0.02em] md:leading-[84px] text-3xl md:text-64x font-semibold"
-        >
-          Neurolinx
-          <span class="block">Privacy Policy</span>
-        </h2>
-        <p
-          data-aos="fade-up"
-          class="mt-6 text-base text-center md:text-xl text-w-100"
-        >
-          Latest Update: November 1, 2023
-        </p>
-      </div>
-    </div>
-
-    <div
-      class="py-8 bg-center bg-no-repeat bg-cover lg:py-24 bg-[url('../img/bc/privacy-bg.svg')"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <div
-          class="flex flex-col md:flex-row justify-start items-start gap-[30px]"
-        >
-          <div
-            class="flex flex-col justify-start items-start gap-4 w-full md:max-w-[410px]"
-            id="nav-container"
-          >
-            <a
-              data-aos="fade-up"
-              href="#Overview"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'Overview')"
-              >Overview</a
-            >
-            <a
-              data-aos="fade-up"
-              href="#Method-of-Collection"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'Method-of-Collection')"
-              >Method of Collection</a
-            >
-            <a
-              data-aos="fade-up"
-              href="#Collected-Information"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'Collected-Information')"
-              >Collected Information</a
-            >
-            <a
-              data-aos="fade-up"
-              href="#Disclosure-of-Collected-Information"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'Disclosure-of-Collected-Information')"
-              >Disclosure of Information</a
-            >
-            <a
-              data-aos="fade-up"
-              href="#privacy-policy"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'privacy-policy')"
-              >Cookies and Similar Technologies</a
-            >
-            <a
-              data-aos="fade-up"
-              href="#User’s-Right"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'User’s-Right')"
-              >User’s Right</a
-            >
-            <a
-              data-aos="fade-up"
-              href="#Security"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'Security')"
-              >Security</a
-            >
-            <a
-              data-aos="fade-up"
-              href="#Information-of-Children"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'Information-of-Children')"
-              >Information of Children</a
-            >
-            <a
-              data-aos="fade-up"
-              href="#Modification-of-Protection"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'Modification-of-Protection')"
-              >Modification of Protection</a
-            >
-            <a
-              data-aos="fade-up"
-              href="#Others"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'Others')"
-              >Others</a
-            >
-            <a
-              data-aos="fade-up"
-              href="#Contact-Information"
-              class="inline-block text-xl font-medium text-w-100"
-              onclick="handleLinkClick(event, 'Contact-Information')"
-              >Contact Information</a
-            >
-          </div>
-
-          <div class="ps-[30px] w-full md:max-w-[810px] border-s border-b-600">
-            <h2
-              data-aos="fade-up"
-              class="mb-4 text-2xl font-medium text-w-500"
-              id="Overview"
-            >
-              Overview
-            </h2>
-            <p data-aos="fade-up" class="text-base text-w-100">
-              This Policy (hereinafter referred to as &#34;Policy&#34;)
-              explains...
-            </p>
-            <p data-aos="fade-up" class="mt-6 text-base text-w-100">
-              The Company is the controller of the information...
-            </p>
-            <p data-aos="fade-up" class="mt-6 text-base text-w-100">
-              Through this Policy, the Company regards personal information...
-            </p>
-            <p data-aos="fade-up" class="mt-6 text-base text-w-100">
-              This Policy will be effective on the 10th day of May, 2023...
-            </p>
-
-            <h2
-              data-aos="fade-up"
-              class="pt-12 mb-4 text-2xl font-medium text-w-500"
-              id="Method-of-Collection"
-            >
-              Method of Collection
-            </h2>
-            <p data-aos="fade-up" class="text-base text-w-100">
-              The Company collects users&#39; information in the following ways:
-            </p>
-            <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
-              <li data-aos="fade-up">
-                By which users enter their personal information online
-              </li>
-              <li data-aos="fade-up">
-                By which personal information is collected offline, such as
-                fairs, conferences, and events
-              </li>
-              <li data-aos="fade-up">
-                By which personal information is collected through automatic
-                generation and collection.
-              </li>
-              <li data-aos="fade-up">
-                The Company may collect information directly provided by users.
-              </li>
-              <li data-aos="fade-up">
-                Users may reject the collection and use of optional items.
-              </li>
-            </ul>
-
-            <h2
-              data-aos="fade-up"
-              class="pt-12 mb-4 text-2xl font-medium text-w-500"
-              id="Collected-Information"
-            >
-              Collected Information
-            </h2>
-            <p data-aos="fade-up" class="text-base text-w-100">
-              The Company regards personal information of the users as
-              important...
-            </p>
-
-            <h2
-              data-aos="fade-up"
-              class="pt-12 mb-4 text-2xl font-medium text-w-500"
-              id="Disclosure-of-Collected-Information"
-            >
-              Disclosure of Collected Information
-            </h2>
-            <p data-aos="fade-up" class="text-base text-w-100">
-              Except for the following cases, the Company will not disclose...
-            </p>
-            <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
-              <li data-aos="fade-up">
-                For carrying out services, the Company commissions external
-                professional companies
-              </li>
-              <li data-aos="fade-up">
-                If required to be disclosed by the laws and regulations.
-              </li>
-              <li data-aos="fade-up">
-                When the user selects to receive information about products and
-                services of certain companies.
-              </li>
-              <li data-aos="fade-up">
-                Other cases where the user gives prior consent for sharing his
-                or her personal information.
-              </li>
-              <li data-aos="fade-up">
-                If required to be disclosed by the investigative agencies for
-                detecting crimes in accordance.
-              </li>
-            </ul>
-
-            <h2
-              data-aos="fade-up"
-              class="pt-12 mb-4 text-2xl font-medium text-w-500"
-              id="privacy-policy"
-            >
-              Cookies and Similar Technologies
-            </h2>
-            <p data-aos="fade-up" class="text-base text-w-100">
-              The Company may collect collective and impersonal information...
-            </p>
-
-            <h2
-              data-aos="fade-up"
-              class="pt-12 mb-4 text-2xl font-medium text-w-500"
-              id="User’s-Right"
-            >
-              User’s Right
-            </h2>
-            <p data-aos="fade-up" class="text-base text-w-100">
-              If, to exercise the above rights, a user uses the menu...
-            </p>
-
-            <h2
-              data-aos="fade-up"
-              class="pt-12 mb-4 text-2xl font-medium text-w-500"
-              id="Security"
-            >
-              Security
-            </h2>
-            <p data-aos="fade-up" class="text-base text-w-100">
-              In handling personal information of the users, the Company takes
-              the following technical measures...
-            </p>
-            <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
-              <li data-aos="fade-up">
-                The user&#39;s personal information is protected by a password,
-                and the files and transmission data are encrypted or protected
-                by file lock functions.
-              </li>
-              <li data-aos="fade-up">
-                The Company takes measures to prevent damage caused by computer
-                viruses by using vaccines programs.
-              </li>
-              <li data-aos="fade-up">
-                The Company adopts a security device and data encryption
-                function to ensure the safety of the system.
-              </li>
-              <li data-aos="fade-up">
-                The Company takes measures to prevent any damages from hacking
-                or theft of personal information by an outsider, including
-                operating an intrusion prevention system.
-              </li>
-            </ul>
-
-            <h2
-              data-aos="fade-up"
-              class="pt-12 mb-4 text-2xl font-medium text-w-500"
-              id="Information-of-Children"
-            >
-              Information of Children
-            </h2>
-            <p data-aos="fade-up" class="text-base text-w-100">
-              The Company will take measures to comply with laws and regulations
-              for protecting...
-            </p>
-
-            <h2
-              data-aos="fade-up"
-              class="pt-12 mb-4 text-2xl font-medium text-w-500"
-              id="Modification-of-Protection"
-            >
-              Modification of Protection
-            </h2>
-            <p data-aos="fade-up" class="text-base text-w-100">
-              The Company may modify its privacy protection measures...
-            </p>
-
-            <h2
-              data-aos="fade-up"
-              class="pt-12 mb-4 text-2xl font-medium text-w-500"
-              id="Others"
-            >
-              Others
-            </h2>
-            <p data-aos="fade-up" class="pb-6 text-base text-w-100">
-              Considering it engages in global businesses...
-            </p>
-
-            <h2
-              data-aos="fade-up"
-              class="pt-12 mb-4 text-2xl font-medium text-w-500"
-              id="Contact-Information"
-            >
-              Contact Information
-            </h2>
-            <p data-aos="fade-up" class="text-base text-w-100">
-              To protect the rights of the members and handle complaints related
-              to personal information...
-            </p>
-            <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
-              <li data-aos="fade-up">
-                Person in charge of privacy protection and customer service:
-                [Name] / [Contact information]
-              </li>
-              <li data-aos="fade-up">
-                Designated department: [Department Name] / [Contact information]
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer
-      class="pt-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/footer-bg.png')]"
-    >
-      <div class="container px-5 pb-24 mx-auto xl:px-0">
-        <div
-          class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:gap-24"
-        >
-          <div
-            class="flex flex-col justify-start items-start gap-8 lg:gap-[112px]"
-          >
-            <a href="/" class="flex items-center justify-start gap-2"
-              ><img src="assets/img/logo.svg" alt="logo" /><span
-                class="text-xl font-medium text-w-900"
-                >Neurolinx</span
-              ></a
-            >
-            <div class="flex gap-4">
-              <a href="#"
-                ><img src="assets/img/icons/facebook.svg" alt="icon"
-              /></a>
-              <a href="#"
-                ><img src="assets/img/icons/instagram.svg" alt="icon"
-              /></a>
-              <a href="#"><img src="assets/img/icons/x.svg" alt="icon" /></a>
-              <a href="#"
-                ><img src="assets/img/icons/linkedin.svg" alt="icon"
-              /></a>
-              <a href="#"
-                ><img src="assets/img/icons/youtube.svg" alt="icon"
-              /></a>
-            </div>
-          </div>
-          <div
-            class="flex flex-col items-start justify-start gap-12 lg:flex-row lg:gap-24"
-          >
-            <div class="flex flex-col items-start justify-start gap-4">
-              <h4 class="text-sm font-medium uppercase text-w-500">company</h4>
-              <a
-                href="/"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >homepage</a
-              >
-              <a
-                href="contact.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >contact us</a
-              >
-              <a
-                href="sign-in.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >sign in</a
-              >
-              <a
-                href="sign-up.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >sign up</a
-              >
-            </div>
-            <div class="flex flex-col items-start justify-start gap-4">
-              <h4 class="text-sm font-medium uppercase text-w-500">
-                solutions
-              </h4>
-              <a
-                href="solution.html "
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >Advanced prompts</a
-              >
-              <a
-                href="documentation.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >documentation</a
-              >
-              <a
-                href="how-it-work.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >how it works</a
-              >
-              <a
-                href="media-kit.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >media kit</a
-              >
-            </div>
-            <div class="flex flex-col items-start justify-start gap-4">
-              <h4 class="text-sm font-medium uppercase text-w-500">
-                resources
-              </h4>
-              <a
-                href="blog.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >blog</a
-              >
-              <a
-                href="blog-single.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >blog signle</a
-              >
-              <a
-                href="case-studies.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >case studies</a
-              >
-              <a
-                href="case-studies-single.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >case studies single</a
-              >
-            </div>
-            <div class="flex flex-col items-start justify-start gap-4">
-              <h4 class="text-sm font-medium uppercase text-w-500">about us</h4>
-              <a
-                href="/patent.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >Our Patents</a
-              >
-              <a
-                href="/service.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >Our Services</a
-              >
-              <a
-                href="/story.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-              >
-                Our Story</a
-              >
-              <a
-                href="/team.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >Our Team</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container px-5 pb-6 mx-auto xl:px-0 md:py-6">
-        <div
-          class="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-between md:gap-8"
-        >
-          <p class="text-xs text-w-100">
-            Copyright &copy; 2024 <a href="/">Neurolinx</a>. All rights reserved
-          </p>
-          <ul class="flex items-center gap-8 md:justify-end">
-            <li
-              class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-            >
-              <a href="privacy-policy.html">Privacy Policy</a>
+<body class="relative font-normal bg-center bg-no-repeat bg-cover bg-b-900">
+  <header
+    class="absolute top-0 left-0 right-0 z-[9999] py-4 border border-w-900 border-opacity-[8%] bg-opacity-5 backdrop-blur-lg bg-w-900">
+    <div class="container px-5 mx-auto xl:px-0">
+      <div class="items-center justify-between hidden md:flex">
+        <a href="/" class="flex items-center justify-start gap-2">
+          <img src="assets/img/logo.svg" alt="logo" />
+          <span class="text-xl font-medium text-w-900">Neurolinx</span>
+        </a>
+        <nav>
+          <ul class="flex items-center justify-center md:gap-4 lg:gap-8">
+            <li class="relative group">
+              <a href="/"
+                class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900">home</a>
             </li>
-            <li
-              class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-            >
-              <a href="terms-of-service.html">Terms of Services</a>
+            <li class="relative group">
+              <a href="solution.html"
+                class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900">solutions</a>
+            </li>
+            <li class="relative cursor-pointer nav-item group">
+              <a href="#"
+                class="flex items-center gap-2 text-sm font-semibold capitalize transition-all duration-300 text-w-100">
+                resources
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                </svg>
+              </a>
+              <!-- Resources Mega Menu -->
+              <div
+                class="absolute left-1/2 transform -translate-x-1/2 hidden mt-9 w-[630px] rounded-lg shadow-lg bg-b-700 border border-b-500 group-hover:flex top-full">
+                <div class="flex w-full h-full">
+                  <!-- Left Section -->
+                  <div class="w-1/2 p-6 border-r border-b-500">
+                    <h2 class="text-xl font-medium text-w-500">Resources</h2>
+                    <p class="mt-2 text-sm text-w-100">
+                      AI-Powered theme personalization resources for tech
+                      agencies.
+                    </p>
+                  </div>
+                  <!-- Right Section -->
+                  <div class="w-1/2 p-6">
+                    <a href="blog.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/blog-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">Blog</h3>
+                          <span>
+                            <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                              Resources for tech agencies.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="case-studies.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/case-studies-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Case Studies
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                              Explore detailed case studies.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="documentation.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/documentation-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Documentation
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                              Detailed AI implementation guides.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="relative cursor-pointer group nav-item">
+              <a href="#"
+                class="flex items-center gap-2 text-sm font-semibold capitalize transition-all duration-300 text-w-100">
+                Company
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                </svg>
+              </a>
+              <!-- company Mega Menu -->
+              <div
+                class="absolute left-1/2 transform -translate-x-1/2 hidden mt-9 w-[630px] rounded-lg shadow-lg bg-b-700 border border-b-500 group-hover:flex top-full">
+                <div class="flex w-full h-full">
+                  <!-- Left Section -->
+                  <div class="w-1/2 p-6 border-r border-b-500">
+                    <h2 class="text-xl font-medium text-w-500">Company</h2>
+                    <p class="mt-2 text-sm text-w-100">
+                      Learn about our mission, team, <br />
+                      and values.
+                    </p>
+                  </div>
+
+                  <!-- Right Section -->
+                  <div class="w-1/2 p-6">
+                    <a href="story.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/our-story-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Our Story
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                              Discover our journey and evolution.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="team.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/our-team-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Our Team
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                              Meet our team of tech innovators.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="service.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/our-services-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Our Services
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                              Tailored solutions for your needs.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="patent.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/our-patent-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Our Patents
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                              Explore our intellectual portfolio.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="media-kit.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/media-kit-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Media Kit
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                              Logos and brand guidelines.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex items-center justify-end gap-2">
+          <a href="sign-in.html"
+            class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 bg-transparent border border-transparent rounded-full text-w-900">sign
+            in</a>
+          <a href="sign-up.html"
+            class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 border rounded-full btn-border bg-gd-secondary hover:bg-transparent text-w-900">sign
+            up</a>
+        </div>
+      </div>
+    </div>
+    <div class="overflow-hidden md:hidden">
+      <div class="container flex items-center justify-between px-5 mx-auto xl:px-0">
+        <a href="/" class="flex gap-2">
+          <img src="assets/img/logo.svg" alt="logo" />
+          <span class="text-xl font-medium text-w-900">Neurolinx</span>
+        </a>
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()"
+          class="inline-block w-6 h-6 cursor-pointer text-w-900" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg>
+      </div>
+
+      <div id="mobile-menu"
+        class="fixed z-[999999] top-0 left-0 flex-col justify-start items-start w-full h-screen p-5 bg-b-600 transition-all duration-300 hidden">
+        <nav>
+          <ul class="flex flex-col items-start justify-start gap-4">
+            <li>
+              <a href="/"
+                class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900">home</a>
+            </li>
+            <li>
+              <a href="solution.html"
+                class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900">solutions</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                onclick="toggleSubMenu('resources')">resources
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="transition-transform duration-300 transform down-svg" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                </svg>
+              </a>
+
+              <ul id="resources-menu" id="resources-menu" class="flex-col hidden gap-2 mt-2">
+                <a href="blog.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/blog-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">Blog</h3>
+                      <span>
+                        <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                          Resources for tech agencies.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="case-studies.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/case-studies-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Case Studies
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                          Explore detailed case studies.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="documentation.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/documentation-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Documentation
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                          Detailed AI implementation guides.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                onclick="toggleSubMenu('company')">company
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                </svg>
+              </a>
+              <ul id="company-menu" class="flex-col hidden gap-2 mt-2">
+                <a href="story.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/our-story-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Our Story
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                          Discover our journey and evolution.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="team.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/our-team-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">Our Team</h3>
+                      <span>
+                        <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                          Meet our team of tech innovators.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="service.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/our-services-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Our Services
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                          Tailored solutions for your needs.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="patent.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/our-patent-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Our Patents
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                          Explore our intellectual portfolio.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="media-kit.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/media-kit-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Media Kit
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal text-w-100 whitespace-nowrap">
+                          Logos and brand guidelines.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex items-center gap-2 mt-8">
+          <a href="sign-in.html"
+            class="inline-block px-4 py-2 rounded-full border border-w-500 hover:border-tropical-indigo border-opacity-[8%] capitalize text-sm font-medium bg-transparent hover:bg-gd-secondary text-w-900 transition-all duration-300">sign
+            in</a>
+          <a href="sign-up.html"
+            class="inline-block px-4 py-2 rounded-full border border-tropical-indigo hover:border-transparent border-opacity-[8%] capitalize text-sm font-medium bg-gd-secondary hover:bg-transparent text-w-900 transition-all duration-300">sign
+            up</a>
+        </div>
+        <svg onclick="toggleMenu()" class="absolute cursor-pointer right-5 top-5 text-w-100"
+          xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+        </svg>
+      </div>
+    </div>
+  </header>
+  <div class="pt-[135px] lg:pt-[164px] pb-24 bg-[url('../img/bc/primary-hero-bg.svg')]">
+    <div class="container px-5 mx-auto xl:px-0">
+      <h2 data-aos="fade-up"
+        class="gd-title text-center tracking-[-0.02em] md:leading-[84px] text-3xl md:text-64x font-semibold">
+        Neurolinx
+        <span class="block">Privacy Policy</span>
+      </h2>
+      <p data-aos="fade-up" class="mt-6 text-base text-center md:text-xl text-w-100">
+        Latest Update: November 1, 2023
+      </p>
+    </div>
+  </div>
+
+  <div class="py-8 bg-center bg-no-repeat bg-cover lg:py-24 bg-[url('../img/bc/privacy-bg.svg')">
+    <div class="container px-5 mx-auto xl:px-0">
+      <div class="flex flex-col md:flex-row justify-start items-start gap-[30px]">
+        <div class="flex flex-col justify-start items-start gap-4 w-full md:max-w-[410px]" id="nav-container">
+          <a data-aos="fade-up" href="#Overview" class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'Overview')">Overview</a>
+          <a data-aos="fade-up" href="#Method-of-Collection" class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'Method-of-Collection')">Method of Collection</a>
+          <a data-aos="fade-up" href="#Collected-Information" class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'Collected-Information')">Collected Information</a>
+          <a data-aos="fade-up" href="#Disclosure-of-Collected-Information"
+            class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'Disclosure-of-Collected-Information')">Disclosure of Information</a>
+          <a data-aos="fade-up" href="#privacy-policy" class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'privacy-policy')">Cookies and Similar Technologies</a>
+          <a data-aos="fade-up" href="#User’s-Right" class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'User’s-Right')">User’s Right</a>
+          <a data-aos="fade-up" href="#Security" class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'Security')">Security</a>
+          <a data-aos="fade-up" href="#Information-of-Children" class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'Information-of-Children')">Information of Children</a>
+          <a data-aos="fade-up" href="#Modification-of-Protection" class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'Modification-of-Protection')">Modification of Protection</a>
+          <a data-aos="fade-up" href="#Others" class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'Others')">Others</a>
+          <a data-aos="fade-up" href="#Contact-Information" class="inline-block text-xl font-medium text-w-100"
+            onclick="handleLinkClick(event, 'Contact-Information')">Contact Information</a>
+        </div>
+
+        <div class="ps-[30px] w-full md:max-w-[810px] border-s border-b-600">
+          <h2 data-aos="fade-up" class="mb-4 text-2xl font-medium text-w-500" id="Overview">
+            Overview
+          </h2>
+          <p data-aos="fade-up" class="text-base text-w-100">
+            This Policy (hereinafter referred to as &#34;Policy&#34;)
+            explains...
+          </p>
+          <p data-aos="fade-up" class="mt-6 text-base text-w-100">
+            The Company is the controller of the information...
+          </p>
+          <p data-aos="fade-up" class="mt-6 text-base text-w-100">
+            Through this Policy, the Company regards personal information...
+          </p>
+          <p data-aos="fade-up" class="mt-6 text-base text-w-100">
+            This Policy will be effective on the 10th day of May, 2023...
+          </p>
+
+          <h2 data-aos="fade-up" class="pt-12 mb-4 text-2xl font-medium text-w-500" id="Method-of-Collection">
+            Method of Collection
+          </h2>
+          <p data-aos="fade-up" class="text-base text-w-100">
+            The Company collects users&#39; information in the following ways:
+          </p>
+          <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
+            <li data-aos="fade-up">
+              By which users enter their personal information online
+            </li>
+            <li data-aos="fade-up">
+              By which personal information is collected offline, such as
+              fairs, conferences, and events
+            </li>
+            <li data-aos="fade-up">
+              By which personal information is collected through automatic
+              generation and collection.
+            </li>
+            <li data-aos="fade-up">
+              The Company may collect information directly provided by users.
+            </li>
+            <li data-aos="fade-up">
+              Users may reject the collection and use of optional items.
+            </li>
+          </ul>
+
+          <h2 data-aos="fade-up" class="pt-12 mb-4 text-2xl font-medium text-w-500" id="Collected-Information">
+            Collected Information
+          </h2>
+          <p data-aos="fade-up" class="text-base text-w-100">
+            The Company regards personal information of the users as
+            important...
+          </p>
+
+          <h2 data-aos="fade-up" class="pt-12 mb-4 text-2xl font-medium text-w-500"
+            id="Disclosure-of-Collected-Information">
+            Disclosure of Collected Information
+          </h2>
+          <p data-aos="fade-up" class="text-base text-w-100">
+            Except for the following cases, the Company will not disclose...
+          </p>
+          <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
+            <li data-aos="fade-up">
+              For carrying out services, the Company commissions external
+              professional companies
+            </li>
+            <li data-aos="fade-up">
+              If required to be disclosed by the laws and regulations.
+            </li>
+            <li data-aos="fade-up">
+              When the user selects to receive information about products and
+              services of certain companies.
+            </li>
+            <li data-aos="fade-up">
+              Other cases where the user gives prior consent for sharing his
+              or her personal information.
+            </li>
+            <li data-aos="fade-up">
+              If required to be disclosed by the investigative agencies for
+              detecting crimes in accordance.
+            </li>
+          </ul>
+
+          <h2 data-aos="fade-up" class="pt-12 mb-4 text-2xl font-medium text-w-500" id="privacy-policy">
+            Cookies and Similar Technologies
+          </h2>
+          <p data-aos="fade-up" class="text-base text-w-100">
+            The Company may collect collective and impersonal information...
+          </p>
+
+          <h2 data-aos="fade-up" class="pt-12 mb-4 text-2xl font-medium text-w-500" id="User’s-Right">
+            User’s Right
+          </h2>
+          <p data-aos="fade-up" class="text-base text-w-100">
+            If, to exercise the above rights, a user uses the menu...
+          </p>
+
+          <h2 data-aos="fade-up" class="pt-12 mb-4 text-2xl font-medium text-w-500" id="Security">
+            Security
+          </h2>
+          <p data-aos="fade-up" class="text-base text-w-100">
+            In handling personal information of the users, the Company takes
+            the following technical measures...
+          </p>
+          <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
+            <li data-aos="fade-up">
+              The user&#39;s personal information is protected by a password,
+              and the files and transmission data are encrypted or protected
+              by file lock functions.
+            </li>
+            <li data-aos="fade-up">
+              The Company takes measures to prevent damage caused by computer
+              viruses by using vaccines programs.
+            </li>
+            <li data-aos="fade-up">
+              The Company adopts a security device and data encryption
+              function to ensure the safety of the system.
+            </li>
+            <li data-aos="fade-up">
+              The Company takes measures to prevent any damages from hacking
+              or theft of personal information by an outsider, including
+              operating an intrusion prevention system.
+            </li>
+          </ul>
+
+          <h2 data-aos="fade-up" class="pt-12 mb-4 text-2xl font-medium text-w-500" id="Information-of-Children">
+            Information of Children
+          </h2>
+          <p data-aos="fade-up" class="text-base text-w-100">
+            The Company will take measures to comply with laws and regulations
+            for protecting...
+          </p>
+
+          <h2 data-aos="fade-up" class="pt-12 mb-4 text-2xl font-medium text-w-500" id="Modification-of-Protection">
+            Modification of Protection
+          </h2>
+          <p data-aos="fade-up" class="text-base text-w-100">
+            The Company may modify its privacy protection measures...
+          </p>
+
+          <h2 data-aos="fade-up" class="pt-12 mb-4 text-2xl font-medium text-w-500" id="Others">
+            Others
+          </h2>
+          <p data-aos="fade-up" class="pb-6 text-base text-w-100">
+            Considering it engages in global businesses...
+          </p>
+
+          <h2 data-aos="fade-up" class="pt-12 mb-4 text-2xl font-medium text-w-500" id="Contact-Information">
+            Contact Information
+          </h2>
+          <p data-aos="fade-up" class="text-base text-w-100">
+            To protect the rights of the members and handle complaints related
+            to personal information...
+          </p>
+          <ul class="flex flex-col text-base list-disc ms-5 text-w-100">
+            <li data-aos="fade-up">
+              Person in charge of privacy protection and customer service:
+              [Name] / [Contact information]
+            </li>
+            <li data-aos="fade-up">
+              Designated department: [Department Name] / [Contact information]
             </li>
           </ul>
         </div>
       </div>
-    </footer>
-    <script src="assets/js/custom.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const navContainer = document.getElementById('nav-container');
-        const links = navContainer.getElementsByTagName('a');
-        let activeLink = 'Overview';
+    </div>
+  </div>
 
-        window.addEventListener('scroll', function () {
-          const scrollY = window.scrollY;
-          navContainer.classList.toggle('shadow-md', scrollY > 100);
+  <footer class="pt-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/footer-bg.png')]">
+    <div class="container px-5 pb-24 mx-auto xl:px-0">
+      <div class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:gap-24">
+        <div class="flex flex-col justify-start items-start gap-8 lg:gap-[112px]">
+          <a href="/" class="flex items-center justify-start gap-2"><img src="assets/img/logo.svg" alt="logo" /><span
+              class="text-xl font-medium text-w-900">Neurolinx</span></a>
+          <div class="flex gap-4">
+            <a href="#"><img src="assets/img/icons/facebook.svg" alt="icon" /></a>
+            <a href="#"><img src="assets/img/icons/instagram.svg" alt="icon" /></a>
+            <a href="#"><img src="assets/img/icons/x.svg" alt="icon" /></a>
+            <a href="#"><img src="assets/img/icons/linkedin.svg" alt="icon" /></a>
+            <a href="#"><img src="assets/img/icons/youtube.svg" alt="icon" /></a>
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-start gap-12 lg:flex-row lg:gap-24">
+          <div class="flex flex-col items-start justify-start gap-4">
+            <h4 class="text-sm font-medium uppercase text-w-500">company</h4>
+            <a href="/"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">homepage</a>
+            <a href="contact.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">contact
+              us</a>
+            <a href="sign-in.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">sign
+              in</a>
+            <a href="sign-up.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">sign
+              up</a>
+          </div>
+          <div class="flex flex-col items-start justify-start gap-4">
+            <h4 class="text-sm font-medium uppercase text-w-500">
+              solutions
+            </h4>
+            <a href="solution.html "
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">Advanced
+              prompts</a>
+            <a href="documentation.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">documentation</a>
+            <a href="how-it-work.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">how
+              it works</a>
+            <a href="media-kit.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">media
+              kit</a>
+          </div>
+          <div class="flex flex-col items-start justify-start gap-4">
+            <h4 class="text-sm font-medium uppercase text-w-500">
+              resources
+            </h4>
+            <a href="blog.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">blog</a>
+            <a href="blog-single.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">blog
+              signle</a>
+            <a href="case-studies.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">case
+              studies</a>
+            <a href="case-studies-single.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">case
+              studies single</a>
+          </div>
+          <div class="flex flex-col items-start justify-start gap-4">
+            <h4 class="text-sm font-medium uppercase text-w-500">about us</h4>
+            <a href="/patent.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">Our
+              Patents</a>
+            <a href="/service.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">Our
+              Services</a>
+            <a href="/story.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">
+              Our Story</a>
+            <a href="/team.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">Our
+              Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-5 pb-6 mx-auto xl:px-0 md:py-6">
+      <div class="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-between md:gap-8">
+        <p class="text-xs text-w-100">
+          Copyright &copy; 2024 <a href="/">Neurolinx</a>. All rights reserved
+        </p>
+        <ul class="flex items-center gap-8 md:justify-end">
+          <li class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo">
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </li>
+          <li class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo">
+            <a href="terms-of-service.html">Terms of Services</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div id="glowing-button-area"
+    class="glowing-button-area max-w-max fixed bottom-5 right-3 md:right-6 flex flex-col justify-center items-center overflow-hidden p-[3px] rounded-lg">
+    <div class="block m-auto rounded-full glowing-button-gradient"></div>
+    <div class="relative flex items-center justify-center px-6 py-3 rounded-lg glowing-button-inner">
+      <a href="https://themeforest.net/collections/11499853-synthmind-ai-generator-bot-business-and-technology-startup-web3-templates"
+        target="_blank" class="inline-block text-base capitalize glowing-button text-w-900">
+        Get Neurolinx For &dollar;29
+      </a>
+      <div class="rounded-lg glowing-button-inner-overlay bg-[#000]"></div>
+    </div>
+  </div>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navContainer = document.getElementById('nav-container');
+      const links = navContainer.getElementsByTagName('a');
+      let activeLink = 'Overview';
+
+      window.addEventListener('scroll', function () {
+        const scrollY = window.scrollY;
+        navContainer.classList.toggle('shadow-md', scrollY > 100);
+      });
+
+      window.handleLinkClick = function (event, linkId) {
+        event.preventDefault();
+        const targetSection = document.getElementById(linkId);
+
+        window.scrollTo({
+          top: targetSection.offsetTop - navContainer.offsetHeight,
+          behavior: 'smooth',
         });
 
-        window.handleLinkClick = function (event, linkId) {
-          event.preventDefault();
-          const targetSection = document.getElementById(linkId);
+        for (let link of links) {
+          link.classList.remove('gd-title');
+        }
 
-          window.scrollTo({
-            top: targetSection.offsetTop - navContainer.offsetHeight,
-            behavior: 'smooth',
-          });
+        event.target.classList.add('gd-title');
+        activeLink = linkId;
+      };
+    });
+  </script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
 
-          for (let link of links) {
-            link.classList.remove('gd-title');
-          }
-
-          event.target.classList.add('gd-title');
-          activeLink = linkId;
-        };
-      });
-    </script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/custom.js"></script>
-  </body>
 </html>
