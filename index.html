@@ -1,1374 +1,929 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
-    <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="assets/css/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/output.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>Neurolinx</title>
-  </head>
 
-  <body class="overflow-x-hidden relative font-normal bg-b-900">
-    <div>
-      <a href="#"> Get Neurolinx For $29 </a>
-    </div>
-    <header
-      class="absolute top-0 left-0 right-0 z-[9999] py-4 border border-w-900 border-opacity-[8%] bg-opacity-5 backdrop-blur-lg bg-w-900"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <div class="hidden justify-between items-center md:flex">
-          <a href="/" class="flex gap-2 justify-start items-center">
-            <img src="assets/img/logo.svg" alt="logo" />
-            <span class="text-xl font-medium text-w-900">Neurolinx</span>
-          </a>
-          <nav>
-            <ul class="flex justify-center items-center md:gap-4 lg:gap-8">
-              <li class="relative group">
-                <a
-                  href="/"
-                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  >home</a
-                >
-              </li>
-              <li class="relative group">
-                <a
-                  href="solution.html"
-                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  >solutions</a
-                >
-              </li>
-              <li class="relative cursor-pointer nav-item group">
-                <a
-                  href="#"
-                  class="flex gap-2 items-center text-sm font-semibold capitalize transition-all duration-300 text-w-100"
-                >
-                  resources
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                    />
-                  </svg>
-                </a>
-                <!-- Resources Mega Menu -->
-                <div
-                  class="absolute left-1/2 transform -translate-x-1/2 hidden mt-9 w-[630px] rounded-lg shadow-lg bg-b-700 border border-b-500 group-hover:flex top-full"
-                >
-                  <div class="flex w-full h-full">
-                    <!-- Left Section -->
-                    <div class="p-6 w-1/2 border-r border-b-500">
-                      <h2 class="text-xl font-medium text-w-500">Resources</h2>
-                      <p class="mt-2 text-sm text-w-100">
-                        AI-Powered theme personalization resources for tech
-                        agencies.
-                      </p>
-                    </div>
-                    <!-- Right Section -->
-                    <div class="p-6 w-1/2">
-                      <a href="blog.html">
-                        <div
-                          class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img src="assets/img/blog-menu.svg" alt="" />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">Blog</h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal whitespace-nowrap text-w-100"
-                              >
-                                Resources for tech agencies.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="case-studies.html">
-                        <div
-                          class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img
-                              src="assets/img/case-studies-menu.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Case Studies
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal whitespace-nowrap text-w-100"
-                              >
-                                Explore detailed case studies.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="documentation.html">
-                        <div
-                          class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img
-                              src="assets/img/documentation-menu.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Documentation
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal whitespace-nowrap text-w-100"
-                              >
-                                Detailed AI implementation guides.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="relative cursor-pointer group nav-item">
-                <a
-                  href="#"
-                  class="flex gap-2 items-center text-sm font-semibold capitalize transition-all duration-300 text-w-100"
-                >
-                  Company
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                    />
-                  </svg>
-                </a>
-                <!-- company Mega Menu -->
-                <div
-                  class="absolute left-1/2 transform -translate-x-1/2 hidden mt-9 w-[630px] rounded-lg shadow-lg bg-b-700 border border-b-500 group-hover:flex top-full"
-                >
-                  <div class="flex w-full h-full">
-                    <!-- Left Section -->
-                    <div class="p-6 w-1/2 border-r border-b-500">
-                      <h2 class="text-xl font-medium text-w-500">Company</h2>
-                      <p class="mt-2 text-sm text-w-100">
-                        Learn about our mission, team, <br />
-                        and values.
-                      </p>
-                    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="assets/css/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/output.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Neurolinx</title>
+</head>
 
-                    <!-- Right Section -->
-                    <div class="p-6 w-1/2">
-                      <a href="story.html">
-                        <div
-                          class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img src="assets/img/our-story-menu.svg" alt="" />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Our Story
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal whitespace-nowrap text-w-100"
-                              >
-                                Discover our journey and evolution.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="team.html">
-                        <div
-                          class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img src="assets/img/our-team-menu.svg" alt="" />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Our Team
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal whitespace-nowrap text-w-100"
-                              >
-                                Meet our team of tech innovators.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="service.html">
-                        <div
-                          class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img
-                              src="assets/img/our-services-menu.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Our Services
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal whitespace-nowrap text-w-100"
-                              >
-                                Tailored solutions for your needs.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="patent.html">
-                        <div
-                          class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img src="assets/img/our-patent-menu.svg" alt="" />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Our Patents
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal whitespace-nowrap text-w-100"
-                              >
-                                Explore our intellectual portfolio.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                      <a href="media-kit.html">
-                        <div
-                          class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                        >
-                          <div>
-                            <img src="assets/img/media-kit-menu.svg" alt="" />
-                          </div>
-                          <div class="flex flex-col">
-                            <h3 class="text-sm font-medium text-w-500">
-                              Media Kit
-                            </h3>
-                            <span>
-                              <p
-                                class="text-xs font-normal whitespace-nowrap text-w-100"
-                              >
-                                Logos and brand guidelines.
-                              </p>
-                            </span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          <div class="flex gap-2 justify-end items-center">
-            <a
-              href="sign-in.html"
-              class="inline-block px-4 py-2 text-sm font-medium capitalize bg-transparent rounded-full border border-transparent transition-all duration-300 text-w-900"
-              >sign in</a
-            >
-            <a
-              href="sign-up.html"
-              class="inline-block px-4 py-2 text-sm font-medium capitalize rounded-full border transition-all duration-300 btn-border bg-gd-secondary hover:bg-transparent text-w-900"
-              >sign up</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="overflow-hidden md:hidden">
-        <div
-          class="container flex justify-between items-center px-5 mx-auto xl:px-0"
-        >
-          <a href="/" class="flex gap-2">
-            <img src="assets/img/logo.svg" alt="logo" />
-            <span class="text-xl font-medium text-w-900">Neurolinx</span>
-          </a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            onclick="toggleMenu()"
-            class="inline-block w-6 h-6 cursor-pointer text-w-900"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            />
-          </svg>
-        </div>
-
-        <div
-          id="mobile-menu"
-          class="fixed z-[999999] top-0 left-0 flex-col justify-start items-start w-full h-screen p-5 bg-b-600 transition-all duration-300 hidden"
-        >
-          <nav>
-            <ul class="flex flex-col gap-4 justify-start items-start">
-              <li>
-                <a
-                  href="/"
-                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  >home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="solution.html"
-                  class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  >solutions</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex gap-1 items-center text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  onclick="toggleSubMenu('resources')"
-                  >resources
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="transition-transform duration-300 transform down-svg"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                    />
-                  </svg>
-                </a>
-
-                <ul
-                  id="resources-menu"
-                  id="resources-menu"
-                  class="hidden flex-col gap-2 mt-2"
-                >
-                  <a href="blog.html">
-                    <div
-                      class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/blog-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">Blog</h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal whitespace-nowrap text-w-100"
-                          >
-                            Resources for tech agencies.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="case-studies.html">
-                    <div
-                      class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/case-studies-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Case Studies
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal whitespace-nowrap text-w-100"
-                          >
-                            Explore detailed case studies.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="documentation.html">
-                    <div
-                      class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/documentation-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Documentation
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal whitespace-nowrap text-w-100"
-                          >
-                            Detailed AI implementation guides.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="flex gap-1 items-center text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
-                  onclick="toggleSubMenu('company')"
-                  >company
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
-                    />
-                  </svg>
-                </a>
-                <ul id="company-menu" class="hidden flex-col gap-2 mt-2">
-                  <a href="story.html">
-                    <div
-                      class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/our-story-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Our Story
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal whitespace-nowrap text-w-100"
-                          >
-                            Discover our journey and evolution.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="team.html">
-                    <div
-                      class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/our-team-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">Our Team</h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal whitespace-nowrap text-w-100"
-                          >
-                            Meet our team of tech innovators.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="service.html">
-                    <div
-                      class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/our-services-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Our Services
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal whitespace-nowrap text-w-100"
-                          >
-                            Tailored solutions for your needs.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="patent.html">
-                    <div
-                      class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/our-patent-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Our Patents
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal whitespace-nowrap text-w-100"
-                          >
-                            Explore our intellectual portfolio.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="media-kit.html">
-                    <div
-                      class="flex gap-2 items-center p-1 mb-1 rounded-lg hover:bg-b-500"
-                    >
-                      <div>
-                        <img src="assets/img/media-kit-menu.svg" alt="" />
-                      </div>
-                      <div class="flex flex-col">
-                        <h3 class="text-sm font-medium text-w-500">
-                          Media Kit
-                        </h3>
-                        <span>
-                          <p
-                            class="text-xs font-normal whitespace-nowrap text-w-100"
-                          >
-                            Logos and brand guidelines.
-                          </p>
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <div class="flex gap-2 items-center mt-8">
-            <a
-              href="sign-in.html"
-              class="inline-block px-4 py-2 rounded-full border border-w-500 hover:border-tropical-indigo border-opacity-[8%] capitalize text-sm font-medium bg-transparent hover:bg-gd-secondary text-w-900 transition-all duration-300"
-              >sign in</a
-            >
-            <a
-              href="sign-up.html"
-              class="inline-block px-4 py-2 rounded-full border border-tropical-indigo hover:border-transparent border-opacity-[8%] capitalize text-sm font-medium bg-gd-secondary hover:bg-transparent text-w-900 transition-all duration-300"
-              >sign up</a
-            >
-          </div>
-          <svg
-            onclick="toggleMenu()"
-            class="absolute top-5 right-5 cursor-pointer text-w-100"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-            />
-          </svg>
-        </div>
-      </div>
-    </header>
-
-    <div
-      class="py-24 md:pt-[164px] bg-center bg-no-repeat bg-cover bg-[url('../img/bc/hero-bg.jpg')]"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <div class="flex flex-col justify-center items-center">
-          <span
-            data-aos="fade-up"
-            class="inline-block px-4 py-2 text-sm font-medium rounded-full border border-b-400 bg-b-600 text-tropical-indigo"
-            >Neurolinx Deep Dive AI Search</span
-          >
-          <h1
-            data-aos="fade-up"
-            class="gd-title mt-4 mb-6 tracking-[-0.02em] text-center text-3xl md:text-5xl lg:text-8xl lg:leading-[112px] font-semibold"
-          >
-            Delve Deep to Discover
-            <span class="inline-block lg:block">Your True Desires</span>
-          </h1>
-          <p
-            data-aos="fade-up"
-            class="mb-8 text-base text-center md:text-xl text-w-100"
-          >
-            Introducing a Revolutionary Recommendation AI Harnessing Collective
-            Insights <span class="inline-block lg:block"></span> to Power
-            Industry-specific Decision Support Systems
-          </p>
-          <a
-            data-aos="fade-up"
-            href="sign-in.html"
-            class="flex justify-center items-center gap-2 mb-8 lg:mb-16 px-6 py-[14px] rounded-full border btn-border text-base font-medium bg-gd-secondary text-w-900"
-          >
-            Get Started Now
-            <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
-          </a>
-          <img
-            data-aos="fade-up"
-            src="assets/img/hero-dash.png"
-            alt="dash-board"
-          />
-          <span
-            data-aos="fade-up"
-            class="inline-block mt-8 mb-8 text-sm font-medium lg:mt-16 text-w-100"
-            >Endorsed by Premier Brands Globally</span
-          >
-          <div
-            data-aos="fade-up"
-            class="hero-brand overflow-hidden whitespace-nowrap relative w-full lg:max-w-[1000px]"
-          >
-            <div class="inline-flex logo_items animate-slides">
-              <img src="assets/img/brand/1.svg" alt="brand" class="mx-4" />
-              <img src="assets/img/brand/2.svg" alt="brand" class="mx-4" />
-              <img src="assets/img/brand/3.svg" alt="brand" class="mx-4" />
-              <img src="assets/img/brand/4.svg" alt="brand" class="mx-4" />
-              <img src="assets/img/brand/5.svg" alt="brand" class="mx-4" />
-            </div>
-            <div class="inline-flex lg:ml-20 logo_items animate-slides">
-              <img src="assets/img/brand/1.svg" alt="brand" class="mx-4" />
-              <img src="assets/img/brand/2.svg" alt="brand" class="mx-4" />
-              <img src="assets/img/brand/3.svg" alt="brand" class="mx-4" />
-              <img src="assets/img/brand/4.svg" alt="brand" class="mx-4" />
-              <img src="assets/img/brand/5.svg" alt="brand" class="mx-4" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/revolutionize-bg.png')]"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <div class="flex flex-col justify-center items-center">
-          <h2
-            data-aos="fade-up"
-            class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
-          >
-            Revolutionize Your Business
-            <span class="inline-block md:block"></span> with Semantic AI
-          </h2>
-          <div class="flex flex-col gap-[30px]">
-            <div class="flex flex-col lg:flex-row gap-[30px]">
-              <div
-                data-aos="fade-up"
-                class="p-8 rounded-lg border md:p-12 border-b-600 bg-gd-tertiary"
-              >
-                <h3
-                  class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500"
-                >
-                  AI Prompt Engine
-                </h3>
-                <p class="mb-12 text-base text-w-100">
-                  Explore our AI Prompt Engine transforming data interaction
-                  with precision and speed for unparalleled productivity.
-                </p>
-                <img
-                  src="assets/img/revolution-card1.png"
-                  alt="revolution-card1.png"
-                />
-              </div>
-              <div
-                data-aos="fade-up"
-                class="p-8 rounded-lg border md:p-12 border-b-600 bg-gd-tertiary"
-              >
-                <h3
-                  class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500"
-                >
-                  Smart Search
-                </h3>
-                <p class="mb-12 text-base text-w-100">
-                  Experience precise search results with our semantic earch
-                  technology.
-                </p>
-                <img
-                  src="assets/img/revolution-card2.png"
-                  alt="revolution-card2.png"
-                />
-              </div>
-            </div>
-            <div class="flex flex-col-reverse lg:flex-row-reverse gap-[30px]">
-              <div
-                data-aos="fade-up"
-                class="p-8 rounded-lg border md:p-12 border-b-600 bg-gd-tertiary"
-              >
-                <h3
-                  class="mb-4 md:leading-[42px] text-3xl md:text-32x font-medium text-w-500"
-                >
-                  AI Guided Suggestions
-                </h3>
-                <p class="mb-12 text-base text-w-100">
-                  Discover personalized recommendations powered by AI. Tailored
-                  just for you, effortlessly find what you're looking for.
-                </p>
-                <img
-                  src="assets/img/revolution-card3.png"
-                  alt="revolution-card3.png"
-                />
-              </div>
-              <div
-                data-aos="fade-up"
-                class="p-8 rounded-lg border md:p-12 border-b-600 bg-gd-tertiary"
-              >
-                <h3
-                  class="mb-4 md:leading-[42px] text-3xl md:text-32x font-medium text-w-500"
-                >
-                  AI Profitization
-                </h3>
-                <p class="mb-12 text-base text-w-100">
-                  Boost revenue with AI-driven monetization. Unlock new income
-                  streams and grow your business.
-                </p>
-                <img
-                  src="assets/img/revolution-card4.png"
-                  alt="revolution-card4.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/video-bg.png')]"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <div class="flex flex-col justify-center items-center">
-          <h2
-            data-aos="fade-up"
-            class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
-          >
-            Beyond Binary Uniquely
-            <span class="inline-block lg:block"></span>Inclusive Prompt
-          </h2>
-          <div data-aos="fade-up-right" class="relative">
-            <img
-              src="assets/img/video.png"
-              alt="video image demo"
-              class="w-full"
-            />
-            <div
-              class="flex absolute top-1/2 left-1/2 justify-center items-center -translate-x-1/2 -translate-y-1/2 cursor-pointer play-btn"
-            >
-              <img src="/assets/img/icons/play-btn.png" alt="" />
-            </div>
-            <div id="videoContainer" class="hidden">
-              <video
-                src="https://cdn.pixabay.com/video/2023/07/19/172156-846731269_large.mp4"
-                class="absolute inset-0 w-full"
-                autoplay
-                muted
-                controls
-                id="video"
-              ></video>
-              <a href="#" id="closeBtn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-x-circle-fill absolute top-5 right-5 w-[30px] h-[30px] text-w-800"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-                  ></path>
+<body class="relative overflow-x-hidden font-normal bg-b-900">
+  <div>
+    <a href="#"> Get Neurolinx For $29 </a>
+  </div>
+  <header
+    class="absolute top-0 left-0 right-0 z-[9999] py-4 border border-w-900 border-opacity-[8%] bg-opacity-5 backdrop-blur-lg bg-w-900">
+    <div class="container px-5 mx-auto xl:px-0">
+      <div class="items-center justify-between hidden md:flex">
+        <a href="/" class="flex items-center justify-start gap-2">
+          <img src="assets/img/logo.svg" alt="logo" />
+          <span class="text-xl font-medium text-w-900">Neurolinx</span>
+        </a>
+        <nav>
+          <ul class="flex items-center justify-center md:gap-4 lg:gap-8">
+            <li class="relative group">
+              <a href="/"
+                class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900">home</a>
+            </li>
+            <li class="relative group">
+              <a href="solution.html"
+                class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900">solutions</a>
+            </li>
+            <li class="relative cursor-pointer nav-item group">
+              <a href="#"
+                class="flex items-center gap-2 text-sm font-semibold capitalize transition-all duration-300 text-w-100">
+                resources
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                 </svg>
               </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/revolutionize-bg.png')]"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <h2
-          data-aos="fade-up"
-          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
-        >
-          Enhance Product Discovery
-          <span class="inline-block lg:block"></span> with Linked Prompts
-        </h2>
-        <div class="flex flex-col">
-          <div class="flex flex-col gap-[30px]">
-            <div
-              data-aos="fade-up-right"
-              class="flex flex-col-reverse lg:flex-row justify-start lg:justify-between gap-[30px] lg:gap-[126px] p-6 md:p-12 rounded-lg border border-b-600 bg-gd-tertiary"
-            >
-              <div class="flex flex-col justify-center items-start">
-                <h3
-                  class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500"
-                >
-                  Masters of Data
-                  <span class="inline-block lg:block">& Machine Learning</span>
-                </h3>
-                <p class="mb-6 w-full md:max-w-[534px] text-base text-w-100">
-                  Founded in 2016 by experienced data scientists, engineers, and
-                  consultants, Neurolinx AI is dedicated to maximizing the
-                  business potential of data and AI.
-                </p>
-                <a
-                  href="team.html"
-                  class="flex flex-row gap-2 items-center px-4 py-2 text-sm font-medium rounded-full border border-tropical-indigo bg-gd-secondary text-w-900"
-                >
-                  Meet Our Team
-                  <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
-                </a>
-              </div>
-              <div class="rounded-lg">
-                <img
-                  class="w-full rounded-lg"
-                  src="assets/img/prompts1.png"
-                  alt="prompts-img"
-                />
-              </div>
-            </div>
-            <div
-              data-aos="fade-up-left"
-              class="flex flex-col-reverse lg:flex-row-reverse justify-start lg:justify-between gap-[30px] lg:gap-[126px] p-6 md:p-12 rounded-lg border border-b-600 bg-gd-tertiary"
-            >
-              <div class="flex flex-col justify-center items-start">
-                <h3
-                  class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500"
-                >
-                  Powered by
-                  <span class="inline-block lg:block"
-                    >Established Technology</span
-                  >
-                </h3>
-                <p class="mb-6 w-full md:max-w-[534px] text-base text-w-100">
-                  Neurolinx AI possesses an extensive intellectual property
-                  portfolio in AI technology, comprising 32 granted patents and
-                  88 patent applications spanning the globe.
-                </p>
-                <a
-                  href="team.html"
-                  class="flex flex-row gap-2 items-center px-4 py-2 text-sm font-medium rounded-full border border-tropical-indigo bg-gd-secondary text-w-900"
-                >
-                  Check Our Patents
-                  <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
-                </a>
-              </div>
-              <div class="rounded-lg">
-                <img
-                  class="w-full rounded-lg"
-                  src="assets/img/prompts2.png"
-                  alt="prompts-img"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/updates&media-bg.png')]"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <div class="flex flex-col justify-center items-center">
-          <h2
-            data-aos="fade-down"
-            class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
-          >
-            Updates &amp;
-            <span class="block"></span> Media Coverage
-          </h2>
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]"
-          >
-            <div
-              data-aos="fade-up"
-              class="p-6 rounded-lg border border-b-600 bg-gd-tertiary"
-            >
-              <img
-                class="w-full rounded-lg"
-                src="assets/img/blog1.png"
-                alt="media image"
-              />
-              <a
-                href="blog-single.html"
-                class="inline-block mt-8 mb-6 text-2xl font-medium transition-all duration-300 text-w-500 hover:text-tropical-indigo"
-              >
-                AI Partners with Megazone Cloud to Enhance GenAI Adoption
-              </a>
-              <div class="flex flex-row gap-2">
-                <a
-                  class="inline-block px-4 py-2 text-xs rounded-full border md:text-sm border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
-                  href="blog.html"
-                  >Prompt Engineering</a
-                >
-                <a
-                  class="inline-block px-4 py-2 text-xs rounded-full border md:text-sm border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
-                  href="blog.html"
-                  >AI Use Cases</a
-                >
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              class="p-6 rounded-lg border border-b-600 bg-gd-tertiary"
-            >
-              <img
-                class="w-full rounded-lg"
-                src="assets/img/blog2.png"
-                alt="media image"
-              />
-              <a
-                href="blog-single.html"
-                class="inline-block mt-8 mb-6 text-2xl font-medium transition-all duration-300 text-w-500 hover:text-tropical-indigo"
-              >
-                AI's Revolutionary Impact Transforming Drama Discovery for Fans
-              </a>
-              <div class="flex flex-row gap-2">
-                <a
-                  class="inline-block px-4 py-2 text-sm rounded-full border border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
-                  href="blog.html"
-                  >Streaming</a
-                >
-                <a
-                  class="inline-block px-4 py-2 text-sm rounded-full border border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
-                  href="blog.html"
-                  >AI Search</a
-                >
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              class="p-6 rounded-lg border border-b-600 bg-gd-tertiary"
-            >
-              <img
-                class="w-full rounded-lg"
-                src="assets/img/blog3.png"
-                alt="media image"
-              />
-              <a
-                href="blog-single.html"
-                class="inline-block mt-8 mb-6 text-2xl font-medium transition-all duration-300 text-w-500 hover:text-tropical-indigo"
-              >
-                Simplified AI Applications Streamlining Complexity for Enhanced
-                Utility
-              </a>
-              <div class="flex flex-wrap gap-2">
-                <a
-                  class="inline-block px-4 py-2 text-sm rounded-full border border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
-                  href="blog.html"
-                  >AI Automation</a
-                >
-                <a
-                  class="inline-block px-4 py-2 text-sm rounded-full border border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
-                  href="blog.html"
-                  >Generative AI Use Cases</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- accordian -->
-    <div
-      class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/FAQ-bg.png')]"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <div class="flex flex-col justify-center items-center">
-          <h2
-            data-aos="fade-down"
-            class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
-          >
-            Frequently Asked
-            <span class="inline-block lg:block"></span>Questions
-          </h2>
-          <div
-            data-aos="fade-up"
-            class="flex flex-col gap-4 w-full lg:max-w-[850px]"
-          >
-            <!-- First accordion item is open by default -->
-            <div
-              class="p-6 rounded-lg border according border-b-600 bg-gd-tertiary active"
-            >
+              <!-- Resources Mega Menu -->
               <div
-                class="flex gap-2 items-start text-xl font-medium cursor-pointer according-header text-w-500"
-                onclick="toggleAccordion(0)"
-              >
-                <img src="assets/img/faq-icon.svg" alt="icon" />
-                What do our Subscription Plans and Add-ons offer&quest;
+                class="absolute left-1/2 transform -translate-x-1/2 hidden mt-9 w-[630px] rounded-lg shadow-lg bg-b-700 border border-b-500 group-hover:flex top-full">
+                <div class="flex w-full h-full">
+                  <!-- Left Section -->
+                  <div class="w-1/2 p-6 border-r border-b-500">
+                    <h2 class="text-xl font-medium text-w-500">Resources</h2>
+                    <p class="mt-2 text-sm text-w-100">
+                      AI-Powered theme personalization resources for tech
+                      agencies.
+                    </p>
+                  </div>
+                  <!-- Right Section -->
+                  <div class="w-1/2 p-6">
+                    <a href="blog.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/blog-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">Blog</h3>
+                          <span>
+                            <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                              Resources for tech agencies.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="case-studies.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/case-studies-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Case Studies
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                              Explore detailed case studies.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="documentation.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/documentation-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Documentation
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                              Detailed AI implementation guides.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div
-                class="according-content pl-[40px]"
-                style="max-height: 200px"
-              >
-                <p class="pt-4 text-base text-w-100">
-                  Neurolinx is cutting-edge technology that offers advanced
-                  AI-driven contextual search and recommendations. This
-                  innovative solution brings tangible advantages such as
-                  improved longtail search, enhanced personalization, and
-                  streamlined operations.
-                </p>
-              </div>
-            </div>
-            <div
-              class="p-6 rounded-lg border according border-b-600 bg-gd-tertiary"
-            >
-              <div
-                class="flex gap-2 items-start text-xl font-medium cursor-pointer according-header text-w-500"
-                onclick="toggleAccordion(1)"
-              >
-                <img src="assets/img/faq-icon.svg" alt="icon" />
-                What is the Mechanism Behind Functionality?
-              </div>
-              <div class="according-content pl-[40px]">
-                <p class="pt-4 text-base text-w-100">
-                  Neurolinx is cutting-edge technology that offers advanced
-                  AI-driven contextual search and recommendations. This
-                  innovative solution brings tangible advantages such as
-                  improved longtail search, enhanced personalization, and
-                  streamlined operations.
-                </p>
-              </div>
-            </div>
-            <div
-              class="p-6 rounded-lg border according border-b-600 bg-gd-tertiary"
-            >
-              <div
-                class="flex gap-2 items-start text-xl font-medium cursor-pointer according-header text-w-500"
-                onclick="toggleAccordion(2)"
-              >
-                <img src="assets/img/faq-icon.svg" alt="icon" />
-                What Advantages Does Search Offer?
-              </div>
-              <div class="according-content pl-[40px]">
-                <p class="pt-4 text-base text-w-100">
-                  Neurolinx is cutting-edge technology that offers advanced
-                  AI-driven contextual search and recommendations. This
-                  innovative solution brings tangible advantages such as
-                  improved longtail search, enhanced personalization, and
-                  streamlined operations.
-                </p>
-              </div>
-            </div>
-            <div
-              class="p-6 rounded-lg border according border-b-600 bg-gd-tertiary"
-            >
-              <div
-                class="flex gap-2 items-start text-xl font-medium cursor-pointer according-header text-w-500"
-                onclick="toggleAccordion(3)"
-              >
-                <img src="assets/img/faq-icon.svg" alt="icon" />
-                What Functionalities does the solution offer?
-              </div>
-              <div class="according-content pl-[40px]">
-                <p class="pt-4 text-base text-w-100">
-                  Neurolinx is cutting-edge technology that offers advanced
-                  AI-driven contextual search and recommendations. This
-                  innovative solution brings tangible advantages such as
-                  improved longtail search, enhanced personalization, and
-                  streamlined operations.
-                </p>
-              </div>
-            </div>
-            <div
-              class="p-6 rounded-lg border according border-b-600 bg-gd-tertiary"
-            >
-              <div
-                class="flex gap-2 items-start text-xl font-medium cursor-pointer according-header text-w-500"
-                onclick="toggleAccordion(4)"
-              >
-                <img src="assets/img/faq-icon.svg" alt="icon" />
-                What Advantages Does Personalization Offer?
-              </div>
-              <div class="according-content pl-[40px]">
-                <p class="pt-4 text-base text-w-100">
-                  Neurolinx is cutting-edge technology that offers advanced
-                  AI-driven contextual search and recommendations. This
-                  innovative solution brings tangible advantages such as
-                  improved longtail search, enhanced personalization, and
-                  streamlined operations.
-                </p>
-              </div>
-            </div>
-            <div
-              class="p-6 rounded-lg border according border-b-600 bg-gd-tertiary"
-            >
-              <div
-                class="flex gap-2 items-start text-xl font-medium cursor-pointer according-header text-w-500"
-                onclick="toggleAccordion(5)"
-              >
-                <img src="assets/img/faq-icon.svg" alt="icon" />
-                How is it utilized for personalization?
-              </div>
-              <div class="according-content pl-[40px]">
-                <p class="pt-4 text-base text-w-100">
-                  Neurolinx is cutting-edge technology that offers advanced
-                  AI-driven contextual search and recommendations. This
-                  innovative solution brings tangible advantages such as
-                  improved longtail search, enhanced personalization, and
-                  streamlined operations.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/getstart-bg.png')]"
-    >
-      <div class="container px-5 mx-auto xl:px-0">
-        <div class="flex flex-col justify-center items-center">
-          <img
-            data-aos="fade-up"
-            src="assets/img/brand-logo.svg"
-            alt="brand-logo"
-          />
-          <h2
-            data-aos="fade-up"
-            class="gd-title mt-8 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold"
-          >
-            Elevate Your Exploration <span class="block"></span> with AI Deep
-            Search
-          </h2>
-          <p
-            data-aos="fade-up"
-            class="mt-4 mb-8 text-base text-center md:text-xl text-w-100"
-          >
-            Enhance Your Discoveries Unleash the Power of AI Neurolinx Deep
-            Search
-          </p>
-          <a
-            data-aos="fade-up"
-            href="sign-in.html"
-            class="flex justify-center items-center gap-2 px-6 py-[14px] rounded-full border border-tropical-indigo capitalize text-base font-medium bg-gd-secondary text-w-900"
-          >
-            Get Started Now
-            <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <footer
-      class="pt-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/footer-bg.png')]"
-    >
-      <div class="container px-5 pb-24 mx-auto xl:px-0">
-        <div
-          class="flex flex-col gap-12 justify-between items-start lg:flex-row lg:gap-24"
-        >
-          <div
-            class="flex flex-col justify-start items-start gap-8 lg:gap-[112px]"
-          >
-            <a href="/" class="flex gap-2 justify-start items-center"
-              ><img src="assets/img/logo.svg" alt="logo" /><span
-                class="text-xl font-medium text-w-900"
-                >Neurolinx</span
-              ></a
-            >
-            <div class="flex gap-4">
-              <a href="#"
-                ><img src="assets/img/icons/facebook.svg" alt="icon"
-              /></a>
-              <a href="#"
-                ><img src="assets/img/icons/instagram.svg" alt="icon"
-              /></a>
-              <a href="#"><img src="assets/img/icons/x.svg" alt="icon" /></a>
-              <a href="#"
-                ><img src="assets/img/icons/linkedin.svg" alt="icon"
-              /></a>
-              <a href="#"
-                ><img src="assets/img/icons/youtube.svg" alt="icon"
-              /></a>
-            </div>
-          </div>
-          <div
-            class="flex flex-col gap-12 justify-start items-start lg:flex-row lg:gap-24"
-          >
-            <div class="flex flex-col gap-4 justify-start items-start">
-              <h4 class="text-sm font-medium uppercase text-w-500">company</h4>
-              <a
-                href="/"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >homepage</a
-              >
-              <a
-                href="contact.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >contact us</a
-              >
-              <a
-                href="sign-in.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >sign in</a
-              >
-              <a
-                href="sign-up.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >sign up</a
-              >
-            </div>
-            <div class="flex flex-col gap-4 justify-start items-start">
-              <h4 class="text-sm font-medium uppercase text-w-500">
-                solutions
-              </h4>
-              <a
-                href="solution.html "
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >Advanced prompts</a
-              >
-              <a
-                href="documentation.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >documentation</a
-              >
-              <a
-                href="how-it-work.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >how it works</a
-              >
-              <a
-                href="media-kit.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >media kit</a
-              >
-            </div>
-            <div class="flex flex-col gap-4 justify-start items-start">
-              <h4 class="text-sm font-medium uppercase text-w-500">
-                resources
-              </h4>
-              <a
-                href="blog.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >blog</a
-              >
-              <a
-                href="blog-single.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >blog signle</a
-              >
-              <a
-                href="case-studies.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >case studies</a
-              >
-              <a
-                href="case-studies-single.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >case studies single</a
-              >
-            </div>
-            <div class="flex flex-col gap-4 justify-start items-start">
-              <h4 class="text-sm font-medium uppercase text-w-500">about us</h4>
-              <a
-                href="/patent.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >Our Patents</a
-              >
-              <a
-                href="/service.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >Our Services</a
-              >
-              <a
-                href="/story.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-              >
-                Our Story</a
-              >
-              <a
-                href="/team.html"
-                class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-                >Our Team</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container px-5 pb-6 mx-auto xl:px-0 md:py-6">
-        <div
-          class="flex flex-col gap-2 justify-center items-center md:flex-row md:justify-between md:gap-8"
-        >
-          <p class="text-xs text-w-100">
-            Copyright &copy; 2024 <a href="/">Neurolinx</a>. All rights reserved
-          </p>
-          <ul class="flex gap-8 items-center md:justify-end">
-            <li
-              class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-            >
-              <a href="privacy-policy.html">Privacy Policy</a>
             </li>
-            <li
-              class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo"
-            >
-              <a href="terms-of-service.html">Terms of Services</a>
+            <li class="relative cursor-pointer group nav-item">
+              <a href="#"
+                class="flex items-center gap-2 text-sm font-semibold capitalize transition-all duration-300 text-w-100">
+                Company
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                </svg>
+              </a>
+              <!-- company Mega Menu -->
+              <div
+                class="absolute left-1/2 transform -translate-x-1/2 hidden mt-9 w-[630px] rounded-lg shadow-lg bg-b-700 border border-b-500 group-hover:flex top-full">
+                <div class="flex w-full h-full">
+                  <!-- Left Section -->
+                  <div class="w-1/2 p-6 border-r border-b-500">
+                    <h2 class="text-xl font-medium text-w-500">Company</h2>
+                    <p class="mt-2 text-sm text-w-100">
+                      Learn about our mission, team, <br />
+                      and values.
+                    </p>
+                  </div>
+
+                  <!-- Right Section -->
+                  <div class="w-1/2 p-6">
+                    <a href="story.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/our-story-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Our Story
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                              Discover our journey and evolution.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="team.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/our-team-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Our Team
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                              Meet our team of tech innovators.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="service.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/our-services-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Our Services
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                              Tailored solutions for your needs.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="patent.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/our-patent-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Our Patents
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                              Explore our intellectual portfolio.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="media-kit.html">
+                      <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                        <div>
+                          <img src="assets/img/media-kit-menu.svg" alt="" />
+                        </div>
+                        <div class="flex flex-col">
+                          <h3 class="text-sm font-medium text-w-500">
+                            Media Kit
+                          </h3>
+                          <span>
+                            <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                              Logos and brand guidelines.
+                            </p>
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
+        </nav>
+        <div class="flex items-center justify-end gap-2">
+          <a href="sign-in.html"
+            class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 bg-transparent border border-transparent rounded-full text-w-900">sign
+            in</a>
+          <a href="sign-up.html"
+            class="inline-block px-4 py-2 text-sm font-medium capitalize transition-all duration-300 border rounded-full btn-border bg-gd-secondary hover:bg-transparent text-w-900">sign
+            up</a>
         </div>
       </div>
-    </footer>
-    <div
-      id="glowing-button-area"
-      class="glowing-button-area max-w-max fixed bottom-5 right-3 md:right-6 flex flex-col justify-center items-center overflow-hidden p-[3px] rounded-lg"
-    >
-      <div class="block m-auto rounded-full glowing-button-gradient"></div>
-      <div
-        class="flex relative justify-center items-center px-6 py-3 rounded-lg glowing-button-inner"
-      >
-        <a
-          href="https://themeforest.net/collections/11499853-synthmind-ai-generator-bot-business-and-technology-startup-web3-templates"
-          target="_blank"
-          class="inline-block text-base capitalize glowing-button text-w-900"
-        >
-          Get Neurolinx For &dollar;29
+    </div>
+    <div class="overflow-hidden md:hidden">
+      <div class="container flex items-center justify-between px-5 mx-auto xl:px-0">
+        <a href="/" class="flex gap-2">
+          <img src="assets/img/logo.svg" alt="logo" />
+          <span class="text-xl font-medium text-w-900">Neurolinx</span>
         </a>
-        <div class="rounded-lg glowing-button-inner-overlay bg-[#000]"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()"
+          class="inline-block w-6 h-6 cursor-pointer text-w-900" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg>
+      </div>
+
+      <div id="mobile-menu"
+        class="fixed z-[999999] top-0 left-0 flex-col justify-start items-start w-full h-screen p-5 bg-b-600 transition-all duration-300 hidden">
+        <nav>
+          <ul class="flex flex-col items-start justify-start gap-4">
+            <li>
+              <a href="/"
+                class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900">home</a>
+            </li>
+            <li>
+              <a href="solution.html"
+                class="inline-block text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900">solutions</a>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                onclick="toggleSubMenu('resources')">resources
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="transition-transform duration-300 transform down-svg" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                </svg>
+              </a>
+
+              <ul id="resources-menu" id="resources-menu" class="flex-col hidden gap-2 mt-2">
+                <a href="blog.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/blog-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">Blog</h3>
+                      <span>
+                        <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                          Resources for tech agencies.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="case-studies.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/case-studies-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Case Studies
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                          Explore detailed case studies.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="documentation.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/documentation-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Documentation
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                          Detailed AI implementation guides.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                class="flex items-center gap-1 text-sm font-semibold capitalize transition-all duration-300 text-w-100 hover:text-w-900"
+                onclick="toggleSubMenu('company')">company
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="transition-transform duration-300 transform down-svg group-hover:rotate-180"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                </svg>
+              </a>
+              <ul id="company-menu" class="flex-col hidden gap-2 mt-2">
+                <a href="story.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/our-story-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Our Story
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                          Discover our journey and evolution.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="team.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/our-team-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">Our Team</h3>
+                      <span>
+                        <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                          Meet our team of tech innovators.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="service.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/our-services-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Our Services
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                          Tailored solutions for your needs.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="patent.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/our-patent-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Our Patents
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                          Explore our intellectual portfolio.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a href="media-kit.html">
+                  <div class="flex items-center gap-2 p-1 mb-1 rounded-lg hover:bg-b-500">
+                    <div>
+                      <img src="assets/img/media-kit-menu.svg" alt="" />
+                    </div>
+                    <div class="flex flex-col">
+                      <h3 class="text-sm font-medium text-w-500">
+                        Media Kit
+                      </h3>
+                      <span>
+                        <p class="text-xs font-normal whitespace-nowrap text-w-100">
+                          Logos and brand guidelines.
+                        </p>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex items-center gap-2 mt-8">
+          <a href="sign-in.html"
+            class="inline-block px-4 py-2 rounded-full border border-w-500 hover:border-tropical-indigo border-opacity-[8%] capitalize text-sm font-medium bg-transparent hover:bg-gd-secondary text-w-900 transition-all duration-300">sign
+            in</a>
+          <a href="sign-up.html"
+            class="inline-block px-4 py-2 rounded-full border border-tropical-indigo hover:border-transparent border-opacity-[8%] capitalize text-sm font-medium bg-gd-secondary hover:bg-transparent text-w-900 transition-all duration-300">sign
+            up</a>
+        </div>
+        <svg onclick="toggleMenu()" class="absolute cursor-pointer top-5 right-5 text-w-100"
+          xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+        </svg>
       </div>
     </div>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/custom.js"></script>
-  </body>
+  </header>
+
+  <div class="py-24 md:pt-[164px] bg-center bg-no-repeat bg-cover bg-[url('../img/bc/hero-bg.jpg')]">
+    <div class="container px-5 mx-auto xl:px-0">
+      <div class="flex flex-col items-center justify-center">
+        <span data-aos="fade-up"
+          class="inline-block px-4 py-2 text-sm font-medium border rounded-full border-b-400 bg-b-600 text-tropical-indigo">Neurolinx
+          Deep Dive AI Search</span>
+        <h1 data-aos="fade-up"
+          class="gd-title mt-4 mb-6 tracking-[-0.02em] text-center text-3xl md:text-5xl lg:text-8xl lg:leading-[112px] font-semibold">
+          Delve Deep to Discover
+          <span class="inline-block lg:block">Your True Desires</span>
+        </h1>
+        <p data-aos="fade-up" class="mb-8 text-base text-center md:text-xl text-w-100">
+          Introducing a Revolutionary Recommendation AI Harnessing Collective
+          Insights <span class="inline-block lg:block"></span> to Power
+          Industry-specific Decision Support Systems
+        </p>
+        <a data-aos="fade-up" href="sign-in.html"
+          class="flex justify-center items-center gap-2 mb-8 lg:mb-16 px-6 py-[14px] rounded-full border btn-border text-base font-medium bg-gd-secondary text-w-900">
+          Get Started Now
+          <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
+        </a>
+        <img data-aos="fade-up" src="assets/img/hero-dash.png" alt="dash-board" />
+        <span data-aos="fade-up" class="inline-block mt-8 mb-8 text-sm font-medium lg:mt-16 text-w-100">Endorsed by
+          Premier Brands Globally</span>
+        <div data-aos="fade-up" class="hero-brand overflow-hidden whitespace-nowrap relative w-full lg:max-w-[1000px]">
+          <div class="inline-flex logo_items animate-slides">
+            <img src="assets/img/brand/1.svg" alt="brand" class="mx-4" />
+            <img src="assets/img/brand/2.svg" alt="brand" class="mx-4" />
+            <img src="assets/img/brand/3.svg" alt="brand" class="mx-4" />
+            <img src="assets/img/brand/4.svg" alt="brand" class="mx-4" />
+            <img src="assets/img/brand/5.svg" alt="brand" class="mx-4" />
+          </div>
+          <div class="inline-flex lg:ml-20 logo_items animate-slides">
+            <img src="assets/img/brand/1.svg" alt="brand" class="mx-4" />
+            <img src="assets/img/brand/2.svg" alt="brand" class="mx-4" />
+            <img src="assets/img/brand/3.svg" alt="brand" class="mx-4" />
+            <img src="assets/img/brand/4.svg" alt="brand" class="mx-4" />
+            <img src="assets/img/brand/5.svg" alt="brand" class="mx-4" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/revolutionize-bg.png')]">
+    <div class="container px-5 mx-auto xl:px-0">
+      <div class="flex flex-col items-center justify-center">
+        <h2 data-aos="fade-up"
+          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold">
+          Revolutionize Your Business
+          <span class="inline-block md:block"></span> with Semantic AI
+        </h2>
+        <div class="flex flex-col gap-[30px]">
+          <div class="flex flex-col lg:flex-row gap-[30px]">
+            <div data-aos="fade-up" class="p-8 border rounded-lg md:p-12 border-b-600 bg-gd-tertiary">
+              <h3 class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500">
+                AI Prompt Engine
+              </h3>
+              <p class="mb-12 text-base text-w-100">
+                Explore our AI Prompt Engine transforming data interaction
+                with precision and speed for unparalleled productivity.
+              </p>
+              <img src="assets/img/revolution-card1.png" alt="revolution-card1.png" />
+            </div>
+            <div data-aos="fade-up" class="p-8 border rounded-lg md:p-12 border-b-600 bg-gd-tertiary">
+              <h3 class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500">
+                Smart Search
+              </h3>
+              <p class="mb-12 text-base text-w-100">
+                Experience precise search results with our semantic earch
+                technology.
+              </p>
+              <img src="assets/img/revolution-card2.png" alt="revolution-card2.png" />
+            </div>
+          </div>
+          <div class="flex flex-col-reverse lg:flex-row-reverse gap-[30px]">
+            <div data-aos="fade-up" class="p-8 border rounded-lg md:p-12 border-b-600 bg-gd-tertiary">
+              <h3 class="mb-4 md:leading-[42px] text-3xl md:text-32x font-medium text-w-500">
+                AI Guided Suggestions
+              </h3>
+              <p class="mb-12 text-base text-w-100">
+                Discover personalized recommendations powered by AI. Tailored
+                just for you, effortlessly find what you're looking for.
+              </p>
+              <img src="assets/img/revolution-card3.png" alt="revolution-card3.png" />
+            </div>
+            <div data-aos="fade-up" class="p-8 border rounded-lg md:p-12 border-b-600 bg-gd-tertiary">
+              <h3 class="mb-4 md:leading-[42px] text-3xl md:text-32x font-medium text-w-500">
+                AI Profitization
+              </h3>
+              <p class="mb-12 text-base text-w-100">
+                Boost revenue with AI-driven monetization. Unlock new income
+                streams and grow your business.
+              </p>
+              <img src="assets/img/revolution-card4.png" alt="revolution-card4.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/video-bg.png')]">
+    <div class="container px-5 mx-auto xl:px-0">
+      <div class="flex flex-col items-center justify-center">
+        <h2 data-aos="fade-up"
+          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold">
+          Beyond Binary Uniquely
+          <span class="inline-block lg:block"></span>Inclusive Prompt
+        </h2>
+        <div data-aos="fade-up-right" class="relative">
+          <img src="assets/img/video.png" alt="video image demo" class="w-full" />
+          <div
+            class="absolute flex items-center justify-center -translate-x-1/2 -translate-y-1/2 cursor-pointer top-1/2 left-1/2 play-btn">
+            <img src="/assets/img/icons/play-btn.png" alt="" />
+          </div>
+          <div id="videoContainer" class="hidden">
+            <video src="https://cdn.pixabay.com/video/2023/07/19/172156-846731269_large.mp4"
+              class="absolute inset-0 w-full" autoplay muted controls id="video"></video>
+            <a href="#" id="closeBtn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-x-circle-fill absolute top-5 right-5 w-[30px] h-[30px] text-w-800" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/revolutionize-bg.png')]">
+    <div class="container px-5 mx-auto xl:px-0">
+      <h2 data-aos="fade-up"
+        class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold">
+        Enhance Product Discovery
+        <span class="inline-block lg:block"></span> with Linked Prompts
+      </h2>
+      <div class="flex flex-col">
+        <div class="flex flex-col gap-[30px]">
+          <div data-aos="fade-up-right"
+            class="flex flex-col-reverse lg:flex-row justify-start lg:justify-between gap-[30px] lg:gap-[126px] p-6 md:p-12 rounded-lg border border-b-600 bg-gd-tertiary">
+            <div class="flex flex-col items-start justify-center">
+              <h3 class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500">
+                Masters of Data
+                <span class="inline-block lg:block">& Machine Learning</span>
+              </h3>
+              <p class="mb-6 w-full md:max-w-[534px] text-base text-w-100">
+                Founded in 2016 by experienced data scientists, engineers, and
+                consultants, Neurolinx AI is dedicated to maximizing the
+                business potential of data and AI.
+              </p>
+              <a href="team.html"
+                class="flex flex-row items-center gap-2 px-4 py-2 text-sm font-medium border rounded-full border-tropical-indigo bg-gd-secondary text-w-900">
+                Meet Our Team
+                <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
+              </a>
+            </div>
+            <div class="rounded-lg">
+              <img class="w-full rounded-lg" src="assets/img/prompts1.png" alt="prompts-img" />
+            </div>
+          </div>
+          <div data-aos="fade-up-left"
+            class="flex flex-col-reverse lg:flex-row-reverse justify-start lg:justify-between gap-[30px] lg:gap-[126px] p-6 md:p-12 rounded-lg border border-b-600 bg-gd-tertiary">
+            <div class="flex flex-col items-start justify-center">
+              <h3 class="mb-4 md:leading-[42px] text-2xl md:text-32x font-medium text-w-500">
+                Powered by
+                <span class="inline-block lg:block">Established Technology</span>
+              </h3>
+              <p class="mb-6 w-full md:max-w-[534px] text-base text-w-100">
+                Neurolinx AI possesses an extensive intellectual property
+                portfolio in AI technology, comprising 32 granted patents and
+                88 patent applications spanning the globe.
+              </p>
+              <a href="team.html"
+                class="flex flex-row items-center gap-2 px-4 py-2 text-sm font-medium border rounded-full border-tropical-indigo bg-gd-secondary text-w-900">
+                Check Our Patents
+                <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
+              </a>
+            </div>
+            <div class="rounded-lg">
+              <img class="w-full rounded-lg" src="assets/img/prompts2.png" alt="prompts-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/updates&media-bg.png')]">
+    <div class="container px-5 mx-auto xl:px-0">
+      <div class="flex flex-col items-center justify-center">
+        <h2 data-aos="fade-down"
+          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold">
+          Updates &amp;
+          <span class="block"></span> Media Coverage
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <div data-aos="fade-up" class="p-6 border rounded-lg border-b-600 bg-gd-tertiary">
+            <img class="w-full rounded-lg" src="assets/img/blog1.png" alt="media image" />
+            <a href="blog-single.html"
+              class="inline-block mt-8 mb-6 text-2xl font-medium transition-all duration-300 text-w-500 hover:text-tropical-indigo">
+              AI Partners with Megazone Cloud to Enhance GenAI Adoption
+            </a>
+            <div class="flex flex-row gap-2">
+              <a class="inline-block px-4 py-2 text-xs border rounded-full md:text-sm border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
+                href="blog.html">Prompt Engineering</a>
+              <a class="inline-block px-4 py-2 text-xs border rounded-full md:text-sm border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
+                href="blog.html">AI Use Cases</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="p-6 border rounded-lg border-b-600 bg-gd-tertiary">
+            <img class="w-full rounded-lg" src="assets/img/blog2.png" alt="media image" />
+            <a href="blog-single.html"
+              class="inline-block mt-8 mb-6 text-2xl font-medium transition-all duration-300 text-w-500 hover:text-tropical-indigo">
+              AI's Revolutionary Impact Transforming Drama Discovery for Fans
+            </a>
+            <div class="flex flex-row gap-2">
+              <a class="inline-block px-4 py-2 text-sm border rounded-full border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
+                href="blog.html">Streaming</a>
+              <a class="inline-block px-4 py-2 text-sm border rounded-full border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
+                href="blog.html">AI Search</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="p-6 border rounded-lg border-b-600 bg-gd-tertiary">
+            <img class="w-full rounded-lg" src="assets/img/blog3.png" alt="media image" />
+            <a href="blog-single.html"
+              class="inline-block mt-8 mb-6 text-2xl font-medium transition-all duration-300 text-w-500 hover:text-tropical-indigo">
+              Simplified AI Applications Streamlining Complexity for Enhanced
+              Utility
+            </a>
+            <div class="flex flex-wrap gap-2">
+              <a class="inline-block px-4 py-2 text-sm border rounded-full border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
+                href="blog.html">AI Automation</a>
+              <a class="inline-block px-4 py-2 text-sm border rounded-full border-b-400 text-w-100 bg-b-600 hover:bg-tropical-indigo hover:text-w-900"
+                href="blog.html">Generative AI Use Cases</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- accordian -->
+  <div class="lg:py-24 py-8 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/FAQ-bg.png')]">
+    <div class="container px-5 mx-auto xl:px-0">
+      <div class="flex flex-col items-center justify-center">
+        <h2 data-aos="fade-down"
+          class="gd-title mb-16 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold">
+          Frequently Asked
+          <span class="inline-block lg:block"></span>Questions
+        </h2>
+        <div data-aos="fade-up" class="flex flex-col gap-4 w-full lg:max-w-[850px]">
+          <!-- First accordion item is open by default -->
+          <div class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary active">
+            <div class="flex items-start gap-2 text-xl font-medium cursor-pointer according-header text-w-500"
+              onclick="toggleAccordion(0)">
+              <img src="assets/img/faq-icon.svg" alt="icon" />
+              What do our Subscription Plans and Add-ons offer&quest;
+            </div>
+            <div class="according-content pl-[40px]" style="max-height: 200px">
+              <p class="pt-4 text-base text-w-100">
+                Neurolinx is cutting-edge technology that offers advanced
+                AI-driven contextual search and recommendations. This
+                innovative solution brings tangible advantages such as
+                improved longtail search, enhanced personalization, and
+                streamlined operations.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary">
+            <div class="flex items-start gap-2 text-xl font-medium cursor-pointer according-header text-w-500"
+              onclick="toggleAccordion(1)">
+              <img src="assets/img/faq-icon.svg" alt="icon" />
+              What is the Mechanism Behind Functionality?
+            </div>
+            <div class="according-content pl-[40px]">
+              <p class="pt-4 text-base text-w-100">
+                Neurolinx is cutting-edge technology that offers advanced
+                AI-driven contextual search and recommendations. This
+                innovative solution brings tangible advantages such as
+                improved longtail search, enhanced personalization, and
+                streamlined operations.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary">
+            <div class="flex items-start gap-2 text-xl font-medium cursor-pointer according-header text-w-500"
+              onclick="toggleAccordion(2)">
+              <img src="assets/img/faq-icon.svg" alt="icon" />
+              What Advantages Does Search Offer?
+            </div>
+            <div class="according-content pl-[40px]">
+              <p class="pt-4 text-base text-w-100">
+                Neurolinx is cutting-edge technology that offers advanced
+                AI-driven contextual search and recommendations. This
+                innovative solution brings tangible advantages such as
+                improved longtail search, enhanced personalization, and
+                streamlined operations.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary">
+            <div class="flex items-start gap-2 text-xl font-medium cursor-pointer according-header text-w-500"
+              onclick="toggleAccordion(3)">
+              <img src="assets/img/faq-icon.svg" alt="icon" />
+              What Functionalities does the solution offer?
+            </div>
+            <div class="according-content pl-[40px]">
+              <p class="pt-4 text-base text-w-100">
+                Neurolinx is cutting-edge technology that offers advanced
+                AI-driven contextual search and recommendations. This
+                innovative solution brings tangible advantages such as
+                improved longtail search, enhanced personalization, and
+                streamlined operations.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary">
+            <div class="flex items-start gap-2 text-xl font-medium cursor-pointer according-header text-w-500"
+              onclick="toggleAccordion(4)">
+              <img src="assets/img/faq-icon.svg" alt="icon" />
+              What Advantages Does Personalization Offer?
+            </div>
+            <div class="according-content pl-[40px]">
+              <p class="pt-4 text-base text-w-100">
+                Neurolinx is cutting-edge technology that offers advanced
+                AI-driven contextual search and recommendations. This
+                innovative solution brings tangible advantages such as
+                improved longtail search, enhanced personalization, and
+                streamlined operations.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 border rounded-lg according border-b-600 bg-gd-tertiary">
+            <div class="flex items-start gap-2 text-xl font-medium cursor-pointer according-header text-w-500"
+              onclick="toggleAccordion(5)">
+              <img src="assets/img/faq-icon.svg" alt="icon" />
+              How is it utilized for personalization?
+            </div>
+            <div class="according-content pl-[40px]">
+              <p class="pt-4 text-base text-w-100">
+                Neurolinx is cutting-edge technology that offers advanced
+                AI-driven contextual search and recommendations. This
+                innovative solution brings tangible advantages such as
+                improved longtail search, enhanced personalization, and
+                streamlined operations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/getstart-bg.png')]">
+    <div class="container px-5 mx-auto xl:px-0">
+      <div class="flex flex-col items-center justify-center">
+        <img data-aos="fade-up" src="assets/img/brand-logo.svg" alt="brand-logo" />
+        <h2 data-aos="fade-up"
+          class="gd-title mt-8 text-center tracking-[-0.02em] lg:leading-[64px] text-3xl md:text-5xl font-semibold">
+          Elevate Your Exploration <span class="block"></span> with AI Deep
+          Search
+        </h2>
+        <p data-aos="fade-up" class="mt-4 mb-8 text-base text-center md:text-xl text-w-100">
+          Enhance Your Discoveries Unleash the Power of AI Neurolinx Deep
+          Search
+        </p>
+        <a data-aos="fade-up" href="sign-in.html"
+          class="flex justify-center items-center gap-2 px-6 py-[14px] rounded-full border border-tropical-indigo capitalize text-base font-medium bg-gd-secondary text-w-900">
+          Get Started Now
+          <img src="assets/img/icons/arrow-right.svg" alt="arrow" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="pt-24 bg-center bg-no-repeat bg-cover bg-[url('../img/bc/footer-bg.png')]">
+    <div class="container px-5 pb-24 mx-auto xl:px-0">
+      <div class="flex flex-col items-start justify-between gap-12 lg:flex-row lg:gap-24">
+        <div class="flex flex-col justify-start items-start gap-8 lg:gap-[112px]">
+          <a href="/" class="flex items-center justify-start gap-2"><img src="assets/img/logo.svg" alt="logo" /><span
+              class="text-xl font-medium text-w-900">Neurolinx</span></a>
+          <div class="flex gap-4">
+            <a href="#"><img src="assets/img/icons/facebook.svg" alt="icon" /></a>
+            <a href="#"><img src="assets/img/icons/instagram.svg" alt="icon" /></a>
+            <a href="#"><img src="assets/img/icons/x.svg" alt="icon" /></a>
+            <a href="#"><img src="assets/img/icons/linkedin.svg" alt="icon" /></a>
+            <a href="#"><img src="assets/img/icons/youtube.svg" alt="icon" /></a>
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-start gap-12 lg:flex-row lg:gap-24">
+          <div class="flex flex-col items-start justify-start gap-4">
+            <h4 class="text-sm font-medium uppercase text-w-500">company</h4>
+            <a href="/"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">homepage</a>
+            <a href="contact.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">contact
+              us</a>
+            <a href="sign-in.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">sign
+              in</a>
+            <a href="sign-up.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">sign
+              up</a>
+          </div>
+          <div class="flex flex-col items-start justify-start gap-4">
+            <h4 class="text-sm font-medium uppercase text-w-500">
+              solutions
+            </h4>
+            <a href="solution.html "
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">Advanced
+              prompts</a>
+            <a href="documentation.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">documentation</a>
+            <a href="how-it-work.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">how
+              it works</a>
+            <a href="media-kit.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">media
+              kit</a>
+          </div>
+          <div class="flex flex-col items-start justify-start gap-4">
+            <h4 class="text-sm font-medium uppercase text-w-500">
+              resources
+            </h4>
+            <a href="blog.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">blog</a>
+            <a href="blog-single.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">blog
+              signle</a>
+            <a href="case-studies.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">case
+              studies</a>
+            <a href="case-studies-single.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">case
+              studies single</a>
+          </div>
+          <div class="flex flex-col items-start justify-start gap-4">
+            <h4 class="text-sm font-medium uppercase text-w-500">about us</h4>
+            <a href="/patent.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">Our
+              Patents</a>
+            <a href="/service.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">Our
+              Services</a>
+            <a href="/story.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">
+              Our Story</a>
+            <a href="/team.html"
+              class="text-sm font-medium capitalize transition-all duration-300 text-w-100 hover:text-tropical-indigo">Our
+              Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container px-5 pb-6 mx-auto xl:px-0 md:py-6">
+      <div class="flex flex-col items-center justify-center gap-2 md:flex-row md:justify-between md:gap-8">
+        <p class="text-xs text-w-100">
+          Copyright &copy; 2024 <a href="/">Neurolinx</a>. All rights reserved
+        </p>
+        <ul class="flex items-center gap-8 md:justify-end">
+          <li class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo">
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </li>
+          <li class="text-xs transition-all duration-300 text-w-100 hover:text-tropical-indigo">
+            <a href="terms-of-service.html">Terms of Services</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
 </html>
